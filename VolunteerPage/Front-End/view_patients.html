@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer Helper</title>
+  <link rel="stylesheet" href="../static/lib/bootstrap-5.3.3-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../static/assets/style_view_patients.css">
+</head>
+<body class="flex-column">
+
+  <img class="banner" src="../static/assets/bg.jpg" alt="background image">
+
+  <div class="w-100 position-absolute z-1 top-0 banner flex-column px-5 pt-3 pb-4">
+    <div class="h-50">
+      <img id="logo" src="../static/assets/uwaterloo_logo.png" alt="logo" style="width: 10rem;">
+
+    </div>
+
+    <div class="h-50 flex-column align-content-end">
+      
+      <text>Welcome, volunteers!</text>
+
+      <form class="d-flex" role="search">
+        <input id=search_button class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit" data-bs-toggle="modal" data-bs-target="#patientModal">Search</button>
+      </form>
+
+    </div>
+
+  </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent w-100 px-1 fixed-top">
+        <div class="container-fluid px-5 py-3">
+        <!-- Add ms-auto class to push the button to the right -->
+        <button class="btn btn-secondary ms-auto" href="/logout">Logout</button>
+        </div>
+    </nav>
+    
+  
+  <!-- https://getbootstrap.com/docs/5.3/components/modal/#modal-components -->
+
+
+  <div class="list-group overflow-y-scroll" id="patient-list">
+    <li class="list-group-item list-group-item-action py-3 px-5 fs-4 patient-list-font">Patient Name 1</li>
+    <li class="list-group-item list-group-item-action py-3 px-5 fs-4 patient-list-font">Patient Name 2</li>
+    <li class="list-group-item list-group-item-action py-3 px-5 fs-4 patient-list-font">Patient Name 3</li>
+
+
+
+  </div>
+
+  <script src="../static/lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>  
+ 
+</body>
+</html>

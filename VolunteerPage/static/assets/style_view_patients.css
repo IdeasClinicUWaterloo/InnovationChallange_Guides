@@ -1,0 +1,26 @@
+#logo {
+    /* z-index: 1; */
+    /* scale: 0.5; */
+    width: 30vw;
+  }
+  
+  .banner {
+    /* top: -50px; */
+    height: 40vh;
+    width: 100vw;
+  }
+  
+  .banner text {
+    color: white;
+    font-size: 3.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+    font-weight: bold;
+  }
+  
+  .patient-list-font {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #103A62;
+    font-weight: bold;
+  }
+  
