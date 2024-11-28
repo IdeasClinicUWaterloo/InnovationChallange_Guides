@@ -17,6 +17,7 @@ This guide follows the steps from the "Real Python" tutorial [Building a chat bo
     * [Corpus Trainer](#corpus-trainer)
     * [Format Training Data](#format-training-data)
     * [Untraining](#untraining)
+5. [Using The Chat Bot](#5-using-the-chat-bot)
 
 # 1. Chat Bot Structure
 
@@ -146,6 +147,16 @@ Check out the provided example by running [format_training_data.py](https://git.
 
 ### Untraining
 Everything that the chatbot learns is stored in its memory even after the program ends. If you are running the training programs and realize you trained the bot with something you do not want it to know/ talk to users about, you can run the [```untrain.py```](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/AI%20Companion/Chatbot_code/untrain.py) file to reset its memory.
+
+
+# 5. Using The Chat Bot
+1. Run ```bot.py``` to initiate chat bot.
+2. Allow training data to download completely.
+3. Once input prompt ">" appears you can type your question/ into the terminal and hit "Enter" to send your input to the chat bot.
+4. Keep on chatting!
+
+### Tips to use
+* Provide as much context as possible in your input (i.e. no single-word responses) since the bot does not have short-term memory of what was previously said in the conversation.
 
 
 <br><br><br><br>
