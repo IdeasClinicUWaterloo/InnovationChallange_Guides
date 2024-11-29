@@ -20,4 +20,5 @@ But hurry! You must get started on your solution quickly since the hospital is h
 For help on how to approach the aforementioned case study categories, see the links below directing you to step-by-step guides on how to implement various tools into your solution.
 * [AI Companion](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/tree/master/AI%20Companion?ref_type=heads)- How to set up a trainable ChatBot.
 * [Dashboard](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/tree/master/Dashboard?ref_type=heads)- How to read data from sensors and display on an integrated dashboard.
+* [Computer Vision](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Computer%20Vision)- How to isolate body segment angles from a video input.
 * [Volunteer Page](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/tree/master/VolunteerPage?ref_type=heads)-  A step-by-step guide to create a simple web-based application through flask with security features and a custom database.
