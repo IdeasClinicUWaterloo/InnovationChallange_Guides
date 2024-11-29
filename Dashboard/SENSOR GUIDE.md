@@ -221,7 +221,7 @@ Below are some functions made to help you implement the sensors into a functiona
 
 
 ### Python
-* [read_arduino_data()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/index.py?ref_type=heads#L123-149) - Reads data sent from Arduino Serial monitor and assigns values to designated variables.
+* [read_arduino_data()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/index.py#L123-149) - Reads data sent from Arduino Serial monitor and assigns values to designated variables.
 * [outputStringToDisplay()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L42-48) - Writes text string to arduino with start and end markers to be read.
 * [parseArduinojson()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/blob/e9674f9574ee715f0571cb3ad8357410d04e8741/Dashboard/Python%20Code/sensorHelper.py#L34-L40) - loads line from Serial Monitor as json string if the line starts with "{". 
 * **Color Sensor:**
