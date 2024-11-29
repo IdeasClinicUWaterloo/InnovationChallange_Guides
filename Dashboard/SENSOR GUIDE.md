@@ -54,13 +54,13 @@ All communication is done via the Serial port.
 
 ### Arduino Code
 * Function to receive data from Serial port, only if data wrapped with <> ex. < hi > <br>
-[recvWithStartEndMarkers()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/)Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino#L126-178)
+[recvWithStartEndMarkers()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino#L126-178)
 * Function to use received data from Serial Port.<br>
-[void replyToPython()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino#L180-210)
+[void replyToPython()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino#L180-210)
 
 ### Python Code
 * Code used to read data from the arduino Serial Monitor <br>
-[ArduioToPython](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/Sensor%20Test%20Code/ArduinoToPython.py?ref_type=heads)
+[ArduioToPython](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Arduino%20Code/Sensor%20Test%20Code/ArduinoToPython.py?ref_type=heads)
 
 
 ## 3. Arduino Shield Connections
@@ -114,7 +114,7 @@ Update the values in the code labeled as “redhigh”, “greenhigh”, “blue
 
 Set values labeled as “redlow”, “greenlow”, “bluelow” to the lowest values when the sensor is in an environment with dark ambient lighting (dark room). This will act as your lowest level of brightness and baseline dark color (0,0,0) 
 #### Code
-* [Color Sensor Test Code](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/Sensor%20Test%20Code/ColorSensor_test.ino?ref_type=heads)
+* [Color Sensor Test Code](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/Sensor%20Test%20Code/ColorSensor_test.ino?ref_type=heads)
 <br><br>
 
 
@@ -131,7 +131,7 @@ The accelerometer uses an I2C port on the Base Shield which requires a VCC, GND,
 Use Breadboard to attach wires from the respected sensor pin to the Base Shield. 
 #### Code
 Run the following code to output the accelerometer x, y, and z acceleration values to the serial monitor. When laid flat on the table, the z-axis should read ~-9.81m/s2 and the other two values should read ~0. Example code provided by the library can also be used for further understanding of the accelerometer functions. 
-* [Accelerometer Test Code](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/Sensor%20Test%20Code/Accelerometer_test.ino?ref_type=heads)
+* [Accelerometer Test Code](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/Sensor%20Test%20Code/Accelerometer_test.ino?ref_type=heads)
 <br><br>
 
 ***
@@ -146,7 +146,7 @@ On the pulse-oximeter sensor, two sides of the sensor there is a single connecti
 This sensor uses an I2C connection, so we need to use the GND and VIN (VCC), as well as one set of the SDA and SCL pins (from the same side). INT pins are NOT used.<br><br>
 Use Breadboard to attach wires from the respected sensor pin to the Base Shield. 
 #### Code
-* [Pulse-Oximeter Test Code](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/Sensor%20Test%20Code/PulseOximeter_test.ino?ref_type=heads)
+* [Pulse-Oximeter Test Code](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/Sensor%20Test%20Code/PulseOximeter_test.ino?ref_type=heads)
 <br><br>
 
 
@@ -160,7 +160,7 @@ No additional libraries needed for this sensor.
 #### Hookup
 Using one of the analog ports on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
 #### Code
-* [Sound Sensor Test Code](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/Sensor%20Test%20Code/SoundSensor_test.ino?ref_type=heads)<br><br>
+* [Sound Sensor Test Code](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/Sensor%20Test%20Code/SoundSensor_test.ino?ref_type=heads)<br><br>
 
 
 ***
@@ -173,7 +173,7 @@ Using one of the analog ports on the Base Shield, simply use the provided 4-pron
 #### Hookup
 The temperature and humidity sensor uses a digital pin connection. Ensure the pin labled data in connected to the proper digital pin referenced in the code/ change it to match, and the GND and VCC pins connect to corresponding pins on Base Shield.
 #### Code
-* [Temp & Humidity Test Code](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/Sensor%20Test%20Code/TempHumid_test.ino?ref_type=heads)
+* [Temp & Humidity Test Code](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/Sensor%20Test%20Code/TempHumid_test.ino?ref_type=heads)
 
 
 ***
@@ -190,7 +190,7 @@ More information can be found in “Hookup Guide” in documents above. <br>
 ![LED Hookup](Images/LED_Hookup.png)
 #### Code
 Running the code below with the correct pin setup should turn the LEDs in circuit with the arduino a light purple color. Change the “red”, “green”, and “blue” values and upload code to get different color outputs! 
-* [LED Test Code](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/Sensor%20Test%20Code/LED_test.ino?ref_type=heads) <br><br>
+* [LED Test Code](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/Sensor%20Test%20Code/LED_test.ino?ref_type=heads) <br><br>
 
 
 ***
@@ -205,7 +205,7 @@ the Grove LCD Display is not compatible with the Arduino R4 and will require pul
 ![Pullup Resistors](Images/Pullup_Resitors.png)
 The LCD Display uses I2C ports, so connect the VCC, GND, SDA, and SCL connection to the corresponding ports on the Base Shield.
 #### Code
-* [LCD Display Test Code](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/Sensor%20Test%20Code/lcdDisplay_test.ino?ref_type=heads)
+* [LCD Display Test Code](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/Sensor%20Test%20Code/lcdDisplay_test.ino?ref_type=heads)
 
 
 
@@ -213,30 +213,30 @@ The LCD Display uses I2C ports, so connect the VCC, GND, SDA, and SCL connection
 Below are some functions made to help you implement the sensors into a functional prototype
 
 ### Arduino
-* [printJson()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino?ref_type=heads#L273-330) - Prints sensor data to Serial Monitor in json string format to make reading data into python easier. 
-* [recvWithStartEndMarkers()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino?ref_type=heads#L126-178) - Read data sent from python when formatted with start and end markers (i.e.< hello >)
-* [replyToPython()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino?ref_type=heads#L180-210) - Reply back to python with actions takn after the data that was sent to arduino was read.
-* [color_3digit()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino?ref_type=heads#L253-257) - Takes an integer input and formats the number into 3-digits, padding the front with 0's if needed.
-* [parseColorValues()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino?ref_type=heads#L259-271) - Takes a 9-digit color code input and splits it into 3 3-digit values for "red", "green", and "blue".
+* [printJson()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino?ref_type=heads#L273-330) - Prints sensor data to Serial Monitor in json string format to make reading data into python easier. 
+* [recvWithStartEndMarkers()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino?ref_type=heads#L126-178) - Read data sent from python when formatted with start and end markers (i.e.< hello >)
+* [replyToPython()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino?ref_type=heads#L180-210) - Reply back to python with actions takn after the data that was sent to arduino was read.
+* [color_3digit()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino?ref_type=heads#L253-257) - Takes an integer input and formats the number into 3-digits, padding the front with 0's if needed.
+* [parseColorValues()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino?ref_type=heads#L259-271) - Takes a 9-digit color code input and splits it into 3 3-digit values for "red", "green", and "blue".
 
 
 ### Python
-* [read_arduino_data()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/index.py?ref_type=heads#L123-149) - Reads data sent from Arduino Serial monitor and assigns values to designated variables.
-* [outputStringToDisplay()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L42-48) - Writes text string to arduino with start and end markers to be read.
-* [parseArduinojson()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L34-40) - loads line from Serial Monitor as json string if the line starts with "{". 
+* [read_arduino_data()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/index.py?ref_type=heads#L123-149) - Reads data sent from Arduino Serial monitor and assigns values to designated variables.
+* [outputStringToDisplay()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L42-48) - Writes text string to arduino with start and end markers to be read.
+* [parseArduinojson()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/blob/e9674f9574ee715f0571cb3ad8357410d04e8741/Dashboard/Python%20Code/sensorHelper.py#L34-L40) - loads line from Serial Monitor as json string if the line starts with "{". 
 * **Color Sensor:**
-    * [constrain()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L67-73) - constrains a value "n" to within a range [minn, maxn].
-    * [color_3digit()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L58-65) - Takes an integer input and formats the number into 3-digits, padding the front with 0's if needed.
-    * [outputColorToDisplay()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L50-56) - Writes color hex code to arduino with start and end markers plus the color tag "+".
-    * [colorCalculation()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L76-116) - calculates the color light needed to be shown on LEDs in order to make ambiant light color meet desired goal (based on color sensor input).
+    * [constrain()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L67-73) - constrains a value "n" to within a range [minn, maxn].
+    * [color_3digit()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L58-65) - Takes an integer input and formats the number into 3-digits, padding the front with 0's if needed.
+    * [outputColorToDisplay()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L50-56) - Writes color hex code to arduino with start and end markers plus the color tag "+".
+    * [colorCalculation()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L76-116) - calculates the color light needed to be shown on LEDs in order to make ambiant light color meet desired goal (based on color sensor input).
 
-* [parse_heart_value()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L21-32) - assigns HR and SPO2 values to variables in memory if valid inputs are read.
+* [parse_heart_value()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L21-32) - assigns HR and SPO2 values to variables in memory if valid inputs are read.
 
 * **Accelerometer** (defining sleep vs awake):
-    * [read_serial()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py#L122-136) - reads wrist accelerometer data from the Serial Monitor.
-    * [calculate_angle()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py#L138-150) - Calcucates the patients arm angle based on accelerometer values read from serial monitor.
-    * [five_sec_average()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py#L156-173) - calculates the average arm angle of the patient over 5 seconds, then adds that value to z_angle_avg list to be used later.
-    * [Identify_sleep_state(angle_input_list)](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py#L176-212) - Output the state of sleep the patient is currently in based of the change in their arm angle. sensitivity can be changed throught the angle tolerance value, along with the threshold time in which the data must remain stable for.
+    * [read_serial()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py#L122-136) - reads wrist accelerometer data from the Serial Monitor.
+    * [calculate_angle()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py#L138-150) - Calcucates the patients arm angle based on accelerometer values read from serial monitor.
+    * [five_sec_average()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py#L156-173) - calculates the average arm angle of the patient over 5 seconds, then adds that value to z_angle_avg list to be used later.
+    * [Identify_sleep_state(angle_input_list)](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py#L176-212) - Output the state of sleep the patient is currently in based of the change in their arm angle. sensitivity can be changed throught the angle tolerance value, along with the threshold time in which the data must remain stable for.
 
 
 ## 6. Commmon Problems  
