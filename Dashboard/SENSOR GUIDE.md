@@ -229,8 +229,8 @@ Below are some functions made to help you implement the sensors into a functiona
     * [color_3digit()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py#L58-L65) - Takes an integer input and formats the number into 3-digits, padding the front with 0's if needed.
     * [outputColorToDisplay()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py#L50-L56) - Writes color hex code to arduino with start and end markers plus the color tag "+".
     * [colorCalculation()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py#L76-L116) - calculates the color light needed to be shown on LEDs in order to make ambiant light color meet desired goal (based on color sensor input).
-
-* [parse_heart_value()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L21-32) - assigns HR and SPO2 values to variables in memory if valid inputs are read.
+* **Pulse Oximeter**
+    * [parse_heart_value()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L21-32) - assigns HR and SPO2 values to variables in memory if valid inputs are read.
 
 * **Accelerometer** (defining sleep vs awake):
     * [read_serial()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py#L122-L136) - reads wrist accelerometer data from the Serial Monitor.
