@@ -213,7 +213,7 @@ The LCD Display uses I2C ports, so connect the VCC, GND, SDA, and SCL connection
 Below are some functions made to help you implement the sensors into a functional prototype
 
 ### Arduino
-* [printJson()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino#L273-330) - Prints sensor data to Serial Monitor in json string format to make reading data into python easier. 
+* [printJson()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino#L273-L330) - Prints sensor data to Serial Monitor in json string format to make reading data into python easier. 
 * [recvWithStartEndMarkers()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino?ref_type=heads#L126-178) - Read data sent from python when formatted with start and end markers (i.e.< hello >)
 * [replyToPython()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino?ref_type=heads#L180-210) - Reply back to python with actions takn after the data that was sent to arduino was read.
 * [color_3digit()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino?ref_type=heads#L253-257) - Takes an integer input and formats the number into 3-digits, padding the front with 0's if needed.
