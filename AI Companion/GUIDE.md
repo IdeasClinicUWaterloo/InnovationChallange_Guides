@@ -137,10 +137,10 @@ df.to_csv('cleaned_file.csv', index=False)
 
 The training file also must be formatted in a specific way that the trainer function can read. This format can be attained throuogh somthing like this, where the text between two characters is extracted and formatted.
 
-In [format_training_data.py]((https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/AI%20Companion/Chatbot_code/format_training_data.py), the text between "{" and "}" is saved into an array. The value of the each array element is written into the new file alternating 'user input' (- -) and 'chat bot response'( -).
+In [format_training_data.py](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/AI%20Companion/Chatbot_code/format_training_data.py), the text between "{" and "}" is saved into an array. The value of the each array element is written into the new file alternating 'user input' (- -) and 'chat bot response'( -).
 
 
-Check out the provided example by running [format_training_data.py]([https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/AI%20Companion/Chatbot_code/format_training_data.py) to format [health_training_data2.csv](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/AI%20Companion/Chatbot_code/health_training_data2.csv) into a useable training file
+Check out the provided example by running [format_training_data.py](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/AI%20Companion/Chatbot_code/format_training_data.py) to format [health_training_data2.csv](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/AI%20Companion/Chatbot_code/health_training_data2.csv) into a useable training file.
 
 
 
