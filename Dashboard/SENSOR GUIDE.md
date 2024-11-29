@@ -202,7 +202,7 @@ Running the code below with the correct pin setup should turn the LEDs in circui
 * [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1081/104030001_Web.pdf)
 #### Hookup
 the Grove LCD Display is not compatible with the Arduino R4 and will require pull-up resistors to function correctly. Use a breadboard to set up 4kΩ to 6kΩ  resistors in the configuration shown below.<br>
-![Pullup Resistors](Images/Pullup_Resitors.png)
+![Pullup Resistors](Images/Pullup_Resitors.png) <br>
 The LCD Display uses I2C ports, so connect the VCC, GND, SDA, and SCL connection to the corresponding ports on the Base Shield.
 #### Code
 * [LCD Display Test Code](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/Sensor%20Test%20Code/lcdDisplay_test.ino?ref_type=heads)
