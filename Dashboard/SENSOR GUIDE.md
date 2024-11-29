@@ -214,29 +214,29 @@ Below are some functions made to help you implement the sensors into a functiona
 
 ### Arduino
 * [printJson()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino#L273-L330) - Prints sensor data to Serial Monitor in json string format to make reading data into python easier. 
-* [recvWithStartEndMarkers()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino?ref_type=heads#L126-178) - Read data sent from python when formatted with start and end markers (i.e.< hello >)
-* [replyToPython()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino?ref_type=heads#L180-210) - Reply back to python with actions takn after the data that was sent to arduino was read.
-* [color_3digit()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino?ref_type=heads#L253-257) - Takes an integer input and formats the number into 3-digits, padding the front with 0's if needed.
-* [parseColorValues()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino?ref_type=heads#L259-271) - Takes a 9-digit color code input and splits it into 3 3-digit values for "red", "green", and "blue".
+* [recvWithStartEndMarkers()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino#L126-L178) - Read data sent from python when formatted with start and end markers (i.e.< hello >)
+* [replyToPython()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino#L180-L210) - Reply back to python with actions takn after the data that was sent to arduino was read.
+* [color_3digit()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino#L253-L257) - Takes an integer input and formats the number into 3-digits, padding the front with 0's if needed.
+* [parseColorValues()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino#L259-L271) - Takes a 9-digit color code input and splits it into 3 3-digit values for "red", "green", and "blue".
 
 
 ### Python
-* [read_arduino_data()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/index.py#L123-149) - Reads data sent from Arduino Serial monitor and assigns values to designated variables.
-* [outputStringToDisplay()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L42-48) - Writes text string to arduino with start and end markers to be read.
-* [parseArduinojson()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/blob/e9674f9574ee715f0571cb3ad8357410d04e8741/Dashboard/Python%20Code/sensorHelper.py#L34-L40) - loads line from Serial Monitor as json string if the line starts with "{". 
+* [read_arduino_data()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/index.py#L123-L149) - Reads data sent from Arduino Serial monitor and assigns values to designated variables.
+* [outputStringToDisplay()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py#L42-L48) - Writes text string to arduino with start and end markers to be read.
+* [parseArduinojson()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py#L34-L40) - loads line from Serial Monitor as json string if the line starts with "{". 
 * **Color Sensor:**
-    * [constrain()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L67-73) - constrains a value "n" to within a range [minn, maxn].
-    * [color_3digit()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L58-65) - Takes an integer input and formats the number into 3-digits, padding the front with 0's if needed.
-    * [outputColorToDisplay()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L50-56) - Writes color hex code to arduino with start and end markers plus the color tag "+".
-    * [colorCalculation()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L76-116) - calculates the color light needed to be shown on LEDs in order to make ambiant light color meet desired goal (based on color sensor input).
+    * [constrain()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py#L67-L73) - constrains a value "n" to within a range [minn, maxn].
+    * [color_3digit()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py#L58-L65) - Takes an integer input and formats the number into 3-digits, padding the front with 0's if needed.
+    * [outputColorToDisplay()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py#L50-L56) - Writes color hex code to arduino with start and end markers plus the color tag "+".
+    * [colorCalculation()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py#L76-L116) - calculates the color light needed to be shown on LEDs in order to make ambiant light color meet desired goal (based on color sensor input).
 
 * [parse_heart_value()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py?ref_type=heads#L21-32) - assigns HR and SPO2 values to variables in memory if valid inputs are read.
 
 * **Accelerometer** (defining sleep vs awake):
-    * [read_serial()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py#L122-136) - reads wrist accelerometer data from the Serial Monitor.
-    * [calculate_angle()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py#L138-150) - Calcucates the patients arm angle based on accelerometer values read from serial monitor.
-    * [five_sec_average()](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py#L156-173) - calculates the average arm angle of the patient over 5 seconds, then adds that value to z_angle_avg list to be used later.
-    * [Identify_sleep_state(angle_input_list)](https://git.uwaterloo.ca/EngineeringIdeasClinic/healthhub/-/blob/master/Dashboard/Python%20Code/sensorHelper.py#L176-212) - Output the state of sleep the patient is currently in based of the change in their arm angle. sensitivity can be changed throught the angle tolerance value, along with the threshold time in which the data must remain stable for.
+    * [read_serial()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py#L122-L136) - reads wrist accelerometer data from the Serial Monitor.
+    * [calculate_angle()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py#L138-L150) - Calcucates the patients arm angle based on accelerometer values read from serial monitor.
+    * [five_sec_average()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py#L156-L173) - calculates the average arm angle of the patient over 5 seconds, then adds that value to z_angle_avg list to be used later.
+    * [Identify_sleep_state(angle_input_list)](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Python%20Code/sensorHelper.py#L176-L212) - Output the state of sleep the patient is currently in based of the change in their arm angle. sensitivity can be changed throught the angle tolerance value, along with the threshold time in which the data must remain stable for.
 
 
 ## 6. Commmon Problems  
