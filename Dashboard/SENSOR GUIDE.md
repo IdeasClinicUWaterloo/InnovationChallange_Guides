@@ -230,7 +230,7 @@ Below are some functions made to help you implement the sensors into a functiona
     * [outputColorToDisplay()](Python%20Code/sensorHelper.py#L50-L56) - Writes color hex code to arduino with start and end markers plus the color tag "+".
     * [colorCalculation()](Python%20Code/sensorHelper.py#L76-L116) - calculates the color light needed to be shown on LEDs in order to make ambiant light color meet desired goal (based on color sensor input).
 * **Pulse Oximeter**
-    * [parse_heart_value()](Python%20Code/sensorHelper.py?ref_type=heads#L21-32) - assigns HR and SPO2 values to variables in memory if valid inputs are read.
+    * [parse_heart_value()](Python%20Code/sensorHelper.py?ref_type=heads#L21-L32) - assigns HR and SPO2 values to variables in memory if valid inputs are read.
 
 * **Accelerometer** (defining sleep vs awake):
     * [read_serial()](Python%20Code/sensorHelper.py#L122-L136) - reads wrist accelerometer data from the Serial Monitor.
