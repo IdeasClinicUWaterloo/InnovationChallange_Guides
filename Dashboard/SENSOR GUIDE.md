@@ -54,7 +54,7 @@ All communication is done via the Serial port.
 
 ### Arduino Code
 * Function to receive data from Serial port, only if data wrapped with <> ex. < hi > <br>
-[recvWithStartEndMarkers()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino#L126-178)
+[recvWithStartEndMarkers()](Arduino%20Code/ArduinoPythonDisplay.ino#L126-178)
 * Function to use received data from Serial Port.<br>
 [void replyToPython()](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/Arduino%20Code/ArduinoPythonDisplay.ino#L180-210)
 
