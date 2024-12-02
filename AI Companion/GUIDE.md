@@ -146,7 +146,7 @@ Check out the provided example by running [format_training_data.py](Chatbot_code
 
 
 ### Untraining
-Everything that the chatbot learns is stored in its memory even after the program ends. If you are running the training programs and realize you trained the bot with something you do not want it to know/ talk to users about, you can run the [```untrain.py```](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/AI%20Companion/Chatbot_code/untrain.py) file to reset its memory.
+Everything that the chatbot learns is stored in its memory even after the program ends. If you are running the training programs and realize you trained the bot with something you do not want it to know/ talk to users about, you can run the [```untrain.py```](Chatbot_code/untrain.py) file to reset its memory.
 
 
 # 5. Using The Chat Bot
