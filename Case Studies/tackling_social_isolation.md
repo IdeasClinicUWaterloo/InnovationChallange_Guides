@@ -1,5 +1,6 @@
-# AI Companion to Reduce Loneliness
-### Case Study 
+# Tackling Loneliness and Social Isolation
+
+## Case Study 
 
 Loneliness is a recognized risk factor for cognitive decline, anxiety, and delirium, particularly in elderly or long-term hospitalized patients. Research shows that socially isolated patients are 1.5 times more likely to develop delirium due to emotional strain, confusion, and disorientation. 
 
@@ -9,6 +10,6 @@ Your task is to investigate the role of loneliness in the onset of delirium whil
 
 This case encourages you to explore solutions like AI companions, ChatBots, and the reliability of online health resources. How will you help Grand River Hospital address loneliness to reduce delirium? 
 
-### Resources
+## References
 * [The Effectiveness of Social Robots for Older Adults: A Systematic Review and Meta-Analysis of Randomized Controlled Studies](https://academic.oup.com/gerontologist/article/59/1/e37/5036100)
 * [Patient isolation associated with hospital delirium](https://www.sciencedaily.com/releases/2011/12/111212144234.htm#:~:text=A%20new%20study%20finds%20that,were%20not%20at%20increased%20risk)
