@@ -1,6 +1,45 @@
-# **A Beginner's Guide to Machine Learning with Python**
+# **A Beginner's Guide to Speech Recognition and Machine Learning with Python**
 
-## **Introduction**
+### Python Libraries for Speech Recognition
+
+-   **SpeechRecognition**: A widely used Python library for speech recognition that supports various engines and APIs, such as Google Web Speech API, Microsoft Bing Voice Recognition, and IBM Speech to Text. Renowned for its user-friendliness and flexibility, it’s an excellent choice for both beginners and experienced developers.
+    
+-   **PyAudio**: Crucial for handling audio input and output in Python, PyAudio provides bindings for PortAudio, a cross-platform audio I/O library. It’s frequently paired with SpeechRecognition to capture microphone input for real-time speech recognition tasks.
+    
+-   **DeepSpeech**: An open-source, deep learning-based speech recognition system developed by Mozilla. DeepSpeech leverages models inspired by Baidu’s Deep Speech research project, making it ideal for developers seeking to incorporate advanced speech recognition features powered by deep learning.
+    
+
+### Implementing Speech Recognition with Python
+
+A basic implementation using the SpeechRecognition library involves the following steps:
+
+1.  **Audio Capture**: Use PyAudio to capture audio from the microphone.
+2.  **Audio Processing**: Convert the audio signal into a format compatible with the SpeechRecognition library.
+3.  **Recognition**: Use the `recognize_google()` method (or another recognition method provided by the library) to convert audio data into text.
+
+Here’s a simple example:
+
+```python
+import speech_recognition as sr
+
+# Initialize recognizer class (for recognizing the speech)
+r = sr.Recognizer()
+
+# Using Microphone as source
+with sr.Microphone() as source:
+    print("Talk")
+    audio_text = r.listen(source)
+    print("Time over, thanks")
+    
+    try:
+        # using google speech recognition
+        print("Text: "+r.recognize_google(audio_text))
+    except:
+         print("Sorry, I did not get that")
+
+```
+
+## **Introduction to Machine Learning**
 
 (*Note this is a guide on how to use premade ML algorithms rather than making your own , feel free to do either)
 
