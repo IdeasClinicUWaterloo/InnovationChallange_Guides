@@ -23,16 +23,16 @@ This guide follows the steps from the "Real Python" tutorial [Building a chat bo
 
 ```bot.py``` is the main file that launches the chatbot. This script does 3 main things to make the chat bot work:
 1. Training the chat bot.
-2. Reding user input.
+2. Reading user input.
 3. Replying to user with a line from training data.
 
-The chat bot is trained using conversations formatted into 'input' and 'response'. It then uses these cases to base its answers off, such that if a similar input is made to that in its training data, it will respond with the similar response.
+The chat bot is trained using conversations formatted into 'input' and 'response'. It then uses these cases to base its answers on, such that if a similar input is made to that in its training data, it will respond with the similar response.
 
-The chat bot runs on an "while loop", prompting a user input, reading the input, and providing a response. If the user input contains one of the pre-defined end conditions (such as 'quit', 'exit', 'goodbye', 'bye') the loop will end, closing the chat bot. Otherwise, the chatbot will copare the user input to its traing data and output the response of the trained input most similar to that of the user.
+The chat bot runs on an "while loop", prompting a user input, reading the input, and providing a response. If the user input contains one of the pre-defined end conditions (such as 'quit', 'exit', 'goodbye', 'bye') the loop will end, closing the chat bot. Otherwise, the chatbot will compare the user input to its training data and output the response of the trained input most similar to that of the user.
 
 
 # 2. Creating Your Virtual Environment
-Virtual environments are useed in software development since they managing packages, dependencies, and versions to avoid conflicts between other package versions. Conflicting package versions can cause these packages to be uninstalled to allow for the others to run properly, causing problems for other coding files later on.
+Virtual environments are useed in software development since they manage packages, dependencies, and versions to avoid conflicts between other package versions. Conflicting package versions can cause these packages to be uninstalled to allow for the others to run properly, causing problems for other coding files later on.
 
 First create a folder to store all your chatbot files and virtual environment in. Open that folder in VS code (or another source code editor) and open your terminal.<br><br>
 Create your virtual environment named "chatbotenv" using:
@@ -51,7 +51,7 @@ Install the chatterbot library using:
 (chatbotenv) PS> python -m pip install chatterbot==1.0.4 pytz
 ```
 
-Since some of the libraries are out of data, some manual changes need to be made in the files. When you first run ```bot.py``` some of these errors will pop up.
+Since some of the libraries are out of date, some manual changes need to be made in the files. When you first run ```bot.py``` some of these errors will pop up.
 
 Use the following table to edit them by selecting the link in the terminal to where the problem is occuring and make the following changes.
 
@@ -114,7 +114,7 @@ Another way to gather data to train the chat bot is to import data from external
 
 An example of this is done with [GPT generated therapist transcripts](https://www.kaggle.com/datasets/thedevastator/synthetic-therapy-conversations-dataset). Here, a extensive ```.csv``` file with user inputs and responses can be formatted, using a script, to the exact format needed for the corpus trainer.
 
-Be careful when importing different files with conversational data since some special characters have different meanings when in a ```.yml``` file. It can be usefule to write a line that removes these charcters from your ```.csv``` file or removes specific phrases/ text that you do not want included in the chat bot response:
+Be careful when importing different files with conversational data since some special characters have different meanings when in a ```.yml``` file. It can be useful to write a line that removes these characters from your ```.csv``` file or removes specific phrases/text that you do not want included in the chat bot response:
 ```
 import pandas as pd
 
@@ -135,7 +135,7 @@ df.to_csv('cleaned_file.csv', index=False)
 
 ```
 
-The training file also must be formatted in a specific way that the trainer function can read. This format can be attained throuogh somthing like this, where the text between two characters is extracted and formatted.
+The training file also must be formatted in a specific way that the trainer function can read. This format can be attained through something like this, where the text between two characters is extracted and formatted.
 
 In [format_training_data.py](Chatbot_code/format_training_data.py), the text between "{" and "}" is saved into an array. The value of the each array element is written into the new file alternating 'user input' (- -) and 'chat bot response'(   -).
 
@@ -146,13 +146,13 @@ Check out the provided example by running [format_training_data.py](Chatbot_code
 
 
 ### Untraining
-Everything that the chatbot learns is stored in its memory even after the program ends. If you are running the training programs and realize you trained the bot with something you do not want it to know/ talk to users about, you can run the [```untrain.py```](Chatbot_code/untrain.py) file to reset its memory.
+Everything that the chatbot learns is stored in its memory even after the program ends. If you are running the training programs and realize you trained the bot with something you do not want it to know/talk to users about, you can run the [```untrain.py```](Chatbot_code/untrain.py) file to reset its memory.
 
 
 # 5. Using The Chat Bot
 1. Run ```bot.py``` to initiate chat bot.
 2. Allow training data to download completely.
-3. Once input prompt ">" appears you can type your question/ into the terminal and hit "Enter" to send your input to the chat bot.
+3. Once input prompt ">" appears you can type your question/into the terminal and hit "Enter" to send your input to the chat bot.
 4. Keep on chatting!
 
 ### Tips to use
