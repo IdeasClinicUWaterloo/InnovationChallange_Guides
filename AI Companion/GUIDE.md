@@ -159,6 +159,7 @@ Everything that the chatbot learns is stored in its memory even after the progra
 
 ### Tips to use
 * Provide as much context as possible in your input (i.e. no single-word responses) since the bot does not have short-term memory of what was previously said in the conversation. Consider using variables to keep track of important information such as the users name, age, and a hobby for the chatbot to train the chatbot with. An example of this can be found in ```train.py```. In order to use this example, uncomment the code on line 21 of ```bot.py``` and run the chatbot.
+* By default, the chatbot will 'learn' from it's interactions when you are testing/running it, allowing it to train off of what you say to it while it is running. If you want to disable this feature, set the the read_only parameter to be True when initializing the Chatbot on line 11 of ```train.py```.
 
 
 <br><br><br><br>
