@@ -20,7 +20,7 @@ But hurry! You must get started on your solution quickly since the hospital is h
 ## Prototype Resources
 For help on how to approach the aforementioned case study categories, see the links below directing you to step-by-step guides on how to implement various tools into your solution.
 * [AI Companion](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/AI_Companion/GUIDE.md)- How to set up a trainable ChatBot in Python.
-* [Dashboard](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/GUIDE.md)- How to read data from sensors and display on an integrated dashboard using an Arduino and sensors.
+* [Dashboard](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/GUIDE.md)- How to read data from sensors and display on an integrated dashboard using an Arduino.
 * [Computer Vision](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Computer_Vision/GUIDE.md)- How to isolate body segment angles from a photo/video input using MediaPipe and OpenCV in Python.
 * [Volunteer Page](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Volunteer_Page/GUIDE.md)-  A step-by-step guide to creating a simple web-based application through flask with security features and a custom database.
 * [SpeechML](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Volunteer_Page/GUIDE.md)- How to recognize and analyze a voice talking in Python.
