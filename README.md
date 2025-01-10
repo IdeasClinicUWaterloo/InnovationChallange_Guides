@@ -11,7 +11,7 @@ The team is tasked with investigating this problem space and coming up with ways
 * The monitoring of delirium risk factors related to patient condition and patient environment;
 * Use of technology to physically and mentally stimulate patients with delirium;
 * Configuring patient interests and personal information into an accessible platform for volunteers;
-* Analyzing patient speech to detect speech abnormalities that indicate delirium.
+* Analyzing patient speech to detect abnormalities that could indicate delirium.
 
 You have been given the freedom to dive deeper into one of these categories or to come up with a unique way to tackle the issue of geriatric hospital-induced delirium. As long as you stay relevant to the problem space, the sky is the limit!
 
