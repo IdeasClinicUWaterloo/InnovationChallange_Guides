@@ -22,5 +22,5 @@ For help on how to approach the aforementioned case study categories, see the li
 * [AI Companion](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/AI_Companion?ref_type=heads)- How to set up a trainable ChatBot in Python.
 * [Dashboard](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard?ref_type=heads)- How to read data from sensors and display on an integrated dashboard using an Arduino and sensors.
 * [Computer Vision](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Computer_Vision)- How to isolate body segment angles from a photo/video input using MediaPipe and OpenCV in Python.
-* [Volunteer Page](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/VolunteerPage?ref_type=heads)-  A step-by-step guide to create a simple web-based application through flask with security features and a custom database.
+* [Volunteer Page](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Volunteer_Page?ref_type=heads)-  A step-by-step guide to create a simple web-based application through flask with security features and a custom database.
 * [SpeechML](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Volunteer_Page)- How to recognize and analyze a voice talking in Python.
