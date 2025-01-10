@@ -8,7 +8,7 @@ from chatterbot_corpus import data
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
 chatbot_name = "Your Companion"
-chatbot = ChatBot(chatbot_name)
+chatbot = ChatBot(chatbot_name, read_only=False)
 
 ##Define types of chat trainers
 List_trainer = ListTrainer(chatbot)
