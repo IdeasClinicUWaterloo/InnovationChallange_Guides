@@ -11,7 +11,7 @@ The team is tasked with investigating this problem space and coming up with ways
 * The monitoring of delirium risk factors related to patient condition and patient environment;
 * Use of technology to physically and mentally stimulate patients with delirium;
 * Configuring patient interests and personal information into an accessible platform for volunteers;
-* Analyzing patient speech to detect speech abnormalities which indicate delirium.
+* Analyzing patient speech to detect speech abnormalities that indicate delirium.
 
 You have been given the freedom to dive deeper into one of these categories or to come up with a unique way to tackle the issue of geriatric hospital-induced delirium. As long as you stay relevant to the problem space, the sky is the limit!
 
@@ -22,5 +22,5 @@ For help on how to approach the aforementioned case study categories, see the li
 * [AI Companion](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/AI_Companion/GUIDE.md)- How to set up a trainable ChatBot in Python.
 * [Dashboard](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard/GUIDE.md)- How to read data from sensors and display on an integrated dashboard using an Arduino and sensors.
 * [Computer Vision](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Computer_Vision/GUIDE.md)- How to isolate body segment angles from a photo/video input using MediaPipe and OpenCV in Python.
-* [Volunteer Page](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Volunteer_Page/GUIDE.md)-  A step-by-step guide to create a simple web-based application through flask with security features and a custom database.
+* [Volunteer Page](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Volunteer_Page/GUIDE.md)-  A step-by-step guide to creating a simple web-based application through flask with security features and a custom database.
 * [SpeechML](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Volunteer_Page/GUIDE.md)- How to recognize and analyze a voice talking in Python.
