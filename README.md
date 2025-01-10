@@ -6,11 +6,12 @@ Congratulations, you have been employed by Grand River Hospital to lead a new de
 
 Delirium can be defined as a change in one’s mental abilities toward a confused, disoriented, or disorganized state. Unlike dementia, which is an irreversible long-term illness, delirium has a rapid onset that does not last as long.
 
-The team is tasked with investigating this problem space and coming up with ways the hospital could mitigate the risks currently threatening the hospitalized aging community. You have been chosen for your ability to problem solve and innovate while working in an interdisciplinary team. During the first few weeks of your employment, your team has been extensively researching hospital-induced delirium, its causes, symptoms, detection methods, and current methods implemented by the hospital. Previous professionals have compiled research from this problem space into 4 categories based on a few ways in which the problem can be approached.
+The team is tasked with investigating this problem space and coming up with ways the hospital could mitigate the risks currently threatening the hospitalized aging community. You have been chosen for your ability to problem solve and innovate while working in an interdisciplinary team. During the first few weeks of your employment, your team has been extensively researching hospital-induced delirium, its causes, symptoms, detection methods, and current methods implemented by the hospital. Previous professionals have compiled research from this problem space into 5 categories based on a few ways in which the problem can be approached.
 * The use of AI-trained chatbots to reduce loneliness and provide mental health resources;
 * The monitoring of delirium risk factors related to patient condition and patient environment;
 * Use of technology to physically and mentally stimulate patients with delirium;
-* Configuring patient interests and personal information into an accessible platform for volunteers.
+* Configuring patient interests and personal information into an accessible platform for volunteers;
+* Analyzing patient speech to detect speech abnormalities which indicate delirium.
 
 You have been given the freedom to dive deeper into one of these categories or to come up with a unique way to tackle the issue of geriatric hospital-induced delirium. As long as you stay relevant to the problem space, the sky is the limit!
 
@@ -18,7 +19,8 @@ But hurry! You must get started on your solution quickly since the hospital is h
 
 ## Prototype Resources
 For help on how to approach the aforementioned case study categories, see the links below directing you to step-by-step guides on how to implement various tools into your solution.
-* [AI Companion](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/AI%20Companion?ref_type=heads)- How to set up a trainable ChatBot.
-* [Dashboard](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard?ref_type=heads)- How to read data from sensors and display on an integrated dashboard.
-* [Computer Vision](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Computer%20Vision)- How to isolate body segment angles from a video input.
+* [AI Companion](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/AI_Companion?ref_type=heads)- How to set up a trainable ChatBot in Python.
+* [Dashboard](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Dashboard?ref_type=heads)- How to read data from sensors and display on an integrated dashboard using an Arduino and sensors.
+* [Computer Vision](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Computer_Vision)- How to isolate body segment angles from a photo/video input using MediaPipe and OpenCV in Python.
 * [Volunteer Page](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/VolunteerPage?ref_type=heads)-  A step-by-step guide to create a simple web-based application through flask with security features and a custom database.
+* [SpeechML](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/tree/main/Volunteer_Page)- How to recognize and analyze a voice talking in Python.
