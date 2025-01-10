@@ -23,7 +23,7 @@ Welcome to the beginner's guide to Computer Vision and Mediapipe! This guide wil
 <h3 id='2.1'>2.1: Download Python (version 3.7 - 3.12)</h3>
 
 -   By the time of the setting of this document, openCV officially supports Python versions from 3.7 to 3.12. 
--   If you don't have a compatible Python version or haven't downloaded any version of Python, you can [Download here](https://www.python.org/downloads/) by choosing the correct version. 
+-   If you don't have a compatible Python version or haven't downloaded any version of Python, you can [download here](https://www.python.org/downloads/) by choosing the correct version. 
 
 <h3 id='2.2'> 2.2: Creating a Virtual Environment</h3>
 
