@@ -171,7 +171,7 @@ Using one of the analog ports on the Base Shield, simply use the provided 4-pron
 #### Docuents
 * No Additional Documentation
 #### Hookup
-The temperature and humidity sensor uses a digital pin connection. Ensure the pin labled data in connected to the proper digital pin referenced in the code/ change it to match, and the GND and VCC pins connect to corresponding pins on Base Shield.
+The temperature and humidity sensor uses a digital pin connection. Ensure the pin labeled data is connected to the proper digital pin referenced in the code/change it to match, and the GND and VCC pins connect to corresponding pins on Base Shield.
 #### Code
 * [Temp & Humidity Test Code](Arduino%20Code/Sensor%20Test%20Code/TempHumid_test.ino?ref_type=heads)
 
