@@ -239,11 +239,11 @@ Below are some functions made to help you implement the sensors into a functiona
     * [Identify_sleep_state(angle_input_list)](/tree/main/Dashboard/Python%20Code/sensorHelper.py#L176-L212) - Output the state of sleep the patient is currently in based of the change in their arm angle. sensitivity can be changed throught the angle tolerance value, along with the threshold time in which the data must remain stable for.
 
 
-## 6. Commmon Problems  
+## 6. Common Problems  
 Type | Error   | How to Fix
 -----|---------|---------------------
 General |Sensor not reading any values   |- Push in all connections. <br> - Change wires to see if that’s the issue. <br> - Wrong pin/ port declared in setup, check values. 
-Genral | Encountering Library Error codes | - Ensure all libraries called in code are installed and are accessable. <br> - Copy and paste code into new tab and run.
+General | Encountering Library Error codes | - Ensure all libraries called in code are installed and are accessable. <br> - Copy and paste code into new tab and run.
 Compilation | "Could not open port" (Python) | - Ensure port name in “Device Manager” matches port referenced in code. <br> - Ensure Serial monitor in arduino is NOT open. <br> - Push in port connection wire.
 Compilation |"Failed to retrieve language identifiers" (Arduino) | - Restart Arduino by pushing the reset button twice fast (built-in light should start pulsing).
 Compilation |"Inconsistent use of indentation" (Python) | - “Shift” + “>” then type “tabs” and click “Convert Indentation to Tabs”.
