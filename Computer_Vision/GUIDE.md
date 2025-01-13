@@ -83,7 +83,7 @@ Here are some important concepts and features of OpenCV that beginners should kn
 <h3 id='3.2'>3.2: OpenCV Basic Implementations</h3>
 
 
-**[Reading and Displaying an Imagage](cv_examples/read_show_image.py)** (These titles are clickable)
+**[Reading and Displaying an Image](cv_examples/read_show_image.py)** (These titles are clickable)
 
  - Using the [```cv2.imread()```](https://www.geeksforgeeks.org/python-opencv-cv2-imread-method/) and [```cv2.imshow()```](https://www.geeksforgeeks.org/python-opencv-cv2-imshow-method/) method.
  - Your first place to start! Now you can display an image from a file with openCV!
