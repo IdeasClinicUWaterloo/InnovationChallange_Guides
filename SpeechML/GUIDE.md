@@ -183,6 +183,7 @@ Copy code
 
 # Load model and tokenizer
 tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
+
 model = AutoModelForSequenceClassification.from_pretrained("distilbert-base-uncased")` 
 
 ### **2. Tokenize Input Text**
