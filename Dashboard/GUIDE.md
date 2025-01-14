@@ -16,7 +16,7 @@ A step-by-step guide on how to  implement arduino sensor modules into python wor
     * [LEDs](#leds)
     * [LCD Display](#lcd-display)
 5. [Useful Functions](#5-useful-functions)
-6. [Common Problems](#6-commmon-problems)
+6. [Common Problems](#6-common-problems)
 
 
 
@@ -99,12 +99,12 @@ Each test code runs a setup function to initialize the code settings, Serial.beg
 
 ***
 ### **Color Sensor**
-[Part Link](https://www.digikey.ca/en/products/detail/sparkfun-electronics/SEN-12829/5673756?s=N4IgTCBcDaIIwFYBsAOAtHOB2ADGgcgCIgC6AvkA)
+[Part Link]([https://www.digikey.ca/en/products/detail/dfrobot/SEN0101/6588457?gclsrc=aw.ds&&utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Product_Low%20ROAS%20Categories&utm_term=&productid=6588457&utm_content=&utm_id=go_cmp-20291741422_adg-_ad-__dev-c_ext-_prd-6588457_sig-Cj0KCQiAs5i8BhDmARIsAGE4xHwkMFMRrdYxqIl3Mv8EGdNE3Zt0SoJy4V8yZpN3muggOEyRdVIUhYoaApFWEALw_wcB&gad_source=1&gclid=Cj0KCQiAs5i8BhDmARIsAGE4xHwkMFMRrdYxqIl3Mv8EGdNE3Zt0SoJy4V8yZpN3muggOEyRdVIUhYoaApFWEALw_wcB&gclsrc=aw.ds])
 #### Libraries
-* [SparkFun_ISL29125_Breakout](https://github.com/sparkfun/ISL29125_Breakout.git) -Alaso available in Arduino IDE Library Manger
+* [DFRobot_TCS3200](https://github.com/Panjkrc/TCS3200_library) -Also available in Arduino IDE Library Manger
 #### Documents
-* [Hookup Guide](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1208/SIL29125_Sensor_HookupGuide.pdf)
-* [Datasheet](https://www.renesas.com/en/document/dst/isl29125-datasheet)
+* [Hookup Guide]([https://github.com/Panjkrc/TCS3200_library/blob/master/wiring_schematics.png])
+* [Datasheet]([https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2107/SEN0101_Web.pdf])
 #### Hookup 
 Color Sensor needs to be connected to an I2C port on the base shield to allow connection to SDA and SCL pins. In this diagram VDD represents VCC, otherwise the pin names should match to the required pins on the base shield. <br><br>
 Use Breadboard to attach wires from the respected sensor pin to the Base Shield. <br>
@@ -120,12 +120,11 @@ Set values labeled as “redlow”, “greenlow”, “bluelow” to the lowest 
 
 ***
 ### **Accelerometer**
-[Part Link]()
+[Part Link]([https://www.digikey.ca/en/products/detail/dfrobot/SEN0373/13590881?s=N4IgTCBcDaIMoFEByAGAzAdjSAugXyA])
 #### Libraries
-* [DFRobot_BMX160 ](https://github.com/DFRobot/DFRobot_BMX160)
+* [DFRobot_BMX160 ]([https://github.com/DFRobot/DFRobot_BMX160])
 #### Documents
-* [Datasheet](https://img.dfrobot.com.cn/wiki/none/40e914cf5839ec7f4d10675f34f8f78c.pdf)
-* [Setup Guide](https://wiki.dfrobot.com/BMX160_9_Axis_Sensor_Module_SKU_SEN0373)
+* [Datasheet + Setup Guide](https://wiki.dfrobot.com/BMX160_9_Axis_Sensor_Module_SKU_SEN0373)
 #### Hookup
 The accelerometer uses an I2C port on the Base Shield which requires a VCC, GND, SCL, and SDA connection. Each pin should be connected to the corresponding pin of the same name on the Base Shield, with the other pins on the sensor left disconnected.<br><br>
 Use Breadboard to attach wires from the respected sensor pin to the Base Shield. 
@@ -138,7 +137,7 @@ Run the following code to output the accelerometer x, y, and z acceleration valu
 ### **Pulse Oximeter**
 [Part Link](https://www.digikey.ca/en/products/detail/analog-devices-inc-maxim-integrated/maxrefdes117/6165562)
 #### Libraries
-* [DFRobot_MAX30102 Arduino Library ](https://github.com/DFRobot/DFRobot_MAX30102)
+* [DFRobot_MAX30102 Arduino Library ](https://github.com/DFRobot/DFRobot_MAX30102) - Must download from Git. Not available through the IDE.
 #### Documents 
 * [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1222/MAXREFDES117_Web.pdf)
 #### Hookup
@@ -156,7 +155,7 @@ Use Breadboard to attach wires from the respected sensor pin to the Base Shield.
 #### Libraries
 No additional libraries needed for this sensor.
 #### Documents
-* [Datasheet](https://files.seeedstudio.com/wiki/Grove_Sound_Sensor/res/LM358.pdf)
+* [Datasheet](https://www.mouser.com/catalog/specsheets/Seeed_101020023.pdf?srsltid=AfmBOop0FdKfSwyigJdKftQx8tpUHrhx6HqNqUzuslpX8aSYn53-JP53)
 #### Hookup
 Using one of the analog ports on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
 #### Code
@@ -164,16 +163,16 @@ Using one of the analog ports on the Base Shield, simply use the provided 4-pron
 
 
 ***
-### Temperature & Humidity Sensor
+### Temperature Sensor
 [Part Link](https://www.digikey.ca/en/products/detail/seeed-technology-co-ltd/101020015/5482612?gclsrc=aw.ds&&utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Product_Low%20ROAS%20Categories&utm_term=&productid=5482612&utm_content=&utm_id=go_cmp-20291741422_adg-_ad-__dev-c_ext-_prd-5482612_sig-Cj0KCQiAs5i8BhDmARIsAGE4xHzTSHPixUNWPe_Sz5zNK9TpqalWp9gAVqcVxikBVv6sWPFyKczcFioaAkwVEALw_wcB&gad_source=1&gclid=Cj0KCQiAs5i8BhDmARIsAGE4xHzTSHPixUNWPe_Sz5zNK9TpqalWp9gAVqcVxikBVv6sWPFyKczcFioaAkwVEALw_wcB&gclsrc=aw.ds)
 #### Libraries
 * [Arduino_SensorKit]()
 #### Docuents
-* No Additional Documentation
+* [Datasheet](https://www.mouser.com/datasheet/2/744/Seeed_101020015-1217523.pdf?srsltid=AfmBOorwHlJCEQqf9S8z5mSSTPdVx3PrN5UK1Yeg_4D4VB85bLY0FuRT)
 #### Hookup
-The temperature and humidity sensor uses a digital pin connection. Ensure the pin labeled data is connected to the proper digital pin referenced in the code/change it to match, and the GND and VCC pins connect to corresponding pins on Base Shield.
+The temperature sensor uses a digital pin connection. Ensure the pin labeled data is connected to the proper digital pin referenced in the code/change it to match, and the GND and VCC pins connect to corresponding pins on Base Shield.
 #### Code
-* [Temp & Humidity Test Code](Arduino%20Code/Sensor%20Test%20Code/TempHumid_test.ino?ref_type=heads)
+* [Temp Test Code](Arduino%20Code/Sensor%20Test%20Code/TempHumid_test.ino?ref_type=heads)
 
 
 ***
