@@ -229,10 +229,12 @@ Fine-tuning a model allows you to adapt pre-trained models for custom tasks. Thi
     Copy code
     
     `from datasets import load_dataset
+    
     dataset = load_dataset("imdb", split="train")
+
     print(dataset)` 
     
-2.  **Fine-tuning Example**: Use Hugging Face's **Trainer API** for fine-tuning models. The steps involve:
+3.  **Fine-tuning Example**: Use Hugging Face's **Trainer API** for fine-tuning models. The steps involve:
     
     -   Tokenizing the dataset.
     -   Defining a `Trainer` and training arguments.
