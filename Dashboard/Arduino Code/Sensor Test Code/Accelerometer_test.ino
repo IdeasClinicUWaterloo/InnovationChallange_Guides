@@ -6,9 +6,9 @@ void setup(){
   delay(100);
   
   //init the hardware bmx160  
-  if (bmx160.begin() != true){
-    Serial.println("init false");
-    while(1);
+  while (bmx160.begin() != true){
+    Serial.println("Initialization failed! Check your wiring.");
+    delay(1000);
   }
   delay(100);
 }
@@ -21,4 +21,5 @@ void loop(){
   //Print out the accelerometer raw x, y, and z values to Serial Monitor
   Serial.print("RAW: ");
   Serial.print(Oaccel.x); Serial.print(" "); Serial.print(Oaccel.y    ); Serial.print(" "); Serial.print(Oaccel.z    ); Serial.println(" m/s^2"); 
+  delay(100);
 }
