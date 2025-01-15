@@ -157,7 +157,7 @@ No additional libraries needed for this sensor.
 #### Documents
 * [Datasheet](https://www.mouser.com/catalog/specsheets/Seeed_101020023.pdf?srsltid=AfmBOop0FdKfSwyigJdKftQx8tpUHrhx6HqNqUzuslpX8aSYn53-JP53)
 #### Hookup
-Using one of the analog ports on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
+Using one of the analog ports (A0) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
 #### Code
 * [Sound Sensor Test Code](Arduino%20Code/Sensor%20Test%20Code/SoundSensor_test.ino?ref_type=heads)<br><br>
 
@@ -170,7 +170,7 @@ No additional libraries needed for this sensor.
 #### Docuents
 * [Datasheet](https://www.mouser.com/datasheet/2/744/Seeed_101020015-1217523.pdf?srsltid=AfmBOorwHlJCEQqf9S8z5mSSTPdVx3PrN5UK1Yeg_4D4VB85bLY0FuRT)
 #### Hookup
-Using one of the analog ports on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
+Using one of the analog ports (A0) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
 #### Code
 * [Temp Test Code](Arduino%20Code/Sensor%20Test%20Code/Temp_test.ino?ref_type=heads)
 
