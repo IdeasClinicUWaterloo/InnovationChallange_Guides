@@ -11,6 +11,7 @@ int scaling = 100; // Can be 0, 2, 20, 100
 // read more at: https://www.mouser.com/catalog/specsheets/TCS3200-E11.pdf
 
 tcs3200 tcs(0, 1, 2, 3, 4); // (S0, S1, S2, S3, output pin)  
+// Numbers correspond to the Digital Ports that the sensor is plugged into
 
 void setup() {
   Serial.begin(9600);
