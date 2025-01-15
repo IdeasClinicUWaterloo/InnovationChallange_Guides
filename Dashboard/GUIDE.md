@@ -172,7 +172,7 @@ No additional libraries needed for this sensor.
 #### Hookup
 Using one of the analog ports on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
 #### Code
-* [Temp Test Code](Arduino%20Code/Sensor%20Test%20Code/TempHumid_test.ino?ref_type=heads)
+* [Temp Test Code](Arduino%20Code/Sensor%20Test%20Code/Temp_test.ino?ref_type=heads)
 
 
 ***
