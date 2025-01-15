@@ -1,4 +1,5 @@
-const int pinSound = A0; // Analog pin of Sound Sensor 
+// Connect the sensor to the A0 (Analog 0) pin on the Arduino board
+const int pinSound = A0; 
 
 void setup(){ 
   Serial.begin(9600); 
