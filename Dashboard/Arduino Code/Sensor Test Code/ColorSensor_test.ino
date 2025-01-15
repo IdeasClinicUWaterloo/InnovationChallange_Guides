@@ -1,62 +1,45 @@
-#include <Wire.h> 
-#include "SparkFunISL29125.h" 
-SFE_ISL29125 RGB_sensor; 
+ //Taken from: https://github.com/Panjkrc/TCS3200_library
 
+#include <tcs3200.h>
 
-void setup() 
-{ 
-  Serial.begin(115200); 
+int red, green, blue, white;
 
-  if (RGB_sensor.init()){ 
-    Serial.println("Sensor Initialization Successful\n\r");} 
-    RGB_sensor.config(CFG1_MODE_RGB | CFG1_10KLUX, CFG2_IR_ADJUST_HIGH, CFG3_NO_INT); 
-} 
- 
+int scaling = 100; // Can be 0, 2, 20, 100
+// If surrounding LEDs are on, lower numbers are better
+// Otherwise use higher numbers
 
-// Calibration values (must be done for every new environment, or when lighting changes) 
-unsigned int redhigh = 3800; 
-unsigned int redlow = 200; 
-unsigned int greenhigh = 4600; 
-unsigned int greenlow = 300; 
-unsigned int bluehigh = 2800; 
-unsigned int bluelow = 200; 
+// read more at: https://www.mouser.com/catalog/specsheets/TCS3200-E11.pdf
 
-// Declare RGB Values  
-int redVal = 0; 
-int greenVal = 0; 
-int blueVal = 0; 
- 
+tcs3200 tcs(0, 1, 2, 3, 4); // (S0, S1, S2, S3, output pin)  
 
-void loop() 
-{ 
-  //Read sensor values for ambient lighting color 
-  unsigned int red = RGB_sensor.readRed(); 
-  unsigned int green = RGB_sensor.readGreen(); 
-  unsigned int blue = RGB_sensor.readBlue(); 
+void setup() {
+  Serial.begin(9600);
+}
 
-  // //Print raw values for calibration 
-  // Serial.print("Raw Values: "); 
-  // Serial.print("("); Serial.print(red); 
-  // Serial.print(", "); Serial.print(green); 
-  // Serial.print(", "); Serial.print(blue);Serial.println(")"); 
-  // Serial.println(); 
+void loop() {
 
-
-  // map read RGB values between 0 and 255 based on high and low calibration values 
-  int redV = map(red, redlow, redhigh, 0, 255); 
-  int greenV = map(green, greenlow, greenhigh, 0, 255); 
-  int blueV = map(blue, bluelow, bluehigh, 0, 255); 
-
-
-  // Constrain to values between 0 and 255 
-  redVal = constrain(redV, 0, 255); 
-  greenVal = constrain(greenV, 0, 255); 
-  blueVal = constrain(blueV, 0, 255); 
+  red = tcs.colorRead('r', scaling);   //reads color value for red
+  Serial.print("R= ");
+  Serial.print(red);
+  Serial.print("    ");
   
- 
-  //Prints color code to the color being read on the sensor
-  // Print out readings related to each color 
-  Serial.print("Red: "); Serial.println(redVal,DEC); 
-  Serial.print("Green: "); Serial.println(greenVal,DEC); 
-  Serial.print("Blue: "); Serial.println(blueVal,DEC); 
-} 
+  green = tcs.colorRead('g', scaling);   //reads color value for green
+  Serial.print("G= ");
+  Serial.print(green);
+  Serial.print("    ");
+
+  blue = tcs.colorRead('b', scaling);    //reads color value for blue
+  Serial.print("B= ");
+  Serial.print(blue);
+  Serial.print("    ");
+
+  white = tcs.colorRead('c', scaling);    //reads color value for white(clear)
+  Serial.print("W(clear)= ");
+  Serial.print(white);
+  Serial.print("    ");
+
+  Serial.println();
+
+  delay(100);
+
+}
