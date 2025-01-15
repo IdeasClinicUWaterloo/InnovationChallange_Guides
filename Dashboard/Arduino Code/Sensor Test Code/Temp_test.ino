@@ -1,4 +1,5 @@
 #include <math.h>
+// Connect the sensor to the A0 (Analog 0) pin on the Arduino board
 
 int B = 3975;  // B-value of the sensor, a constant
 
