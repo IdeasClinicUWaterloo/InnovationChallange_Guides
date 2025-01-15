@@ -12,7 +12,7 @@ A step-by-step guide on how to  implement arduino sensor modules into python wor
     * [Accelerometer](#accelerometer)
     * [Pulse Oximeter](#pulse-oximeter)
     * [Sound Sensor](#sound-sensor)
-    * [Temperature & Humidity Sensor](#temperature-&-humidity-sensor)
+    * [Temperatur Sensor](#temperature-sensor)
     * [LEDs](#leds)
     * [LCD Display](#lcd-display)
 5. [Useful Functions](#5-useful-functions)
@@ -163,7 +163,7 @@ Using one of the analog ports on the Base Shield, simply use the provided 4-pron
 
 
 ***
-### Temperature Sensor
+### **Temperature Sensor**
 [Part Link](https://www.digikey.ca/en/products/detail/seeed-technology-co-ltd/101020015/5482612?gclsrc=aw.ds&&utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Product_Low%20ROAS%20Categories&utm_term=&productid=5482612&utm_content=&utm_id=go_cmp-20291741422_adg-_ad-__dev-c_ext-_prd-5482612_sig-Cj0KCQiAs5i8BhDmARIsAGE4xHzTSHPixUNWPe_Sz5zNK9TpqalWp9gAVqcVxikBVv6sWPFyKczcFioaAkwVEALw_wcB&gad_source=1&gclid=Cj0KCQiAs5i8BhDmARIsAGE4xHzTSHPixUNWPe_Sz5zNK9TpqalWp9gAVqcVxikBVv6sWPFyKczcFioaAkwVEALw_wcB&gclsrc=aw.ds)
 #### Libraries
 * [Arduino_SensorKit]()
