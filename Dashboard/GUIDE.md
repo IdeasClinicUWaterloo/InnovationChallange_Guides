@@ -235,7 +235,7 @@ Below are some functions made to help you implement the sensors into a functiona
     * [read_serial()](Python%20Code/sensorHelper.py#L122-L136) - reads wrist accelerometer data from the Serial Monitor.
     * [calculate_angle()](Python%20Code/sensorHelper.py#L138-L150) - Calcucates the patients arm angle based on accelerometer values read from serial monitor.
     * [five_sec_average()](Python%20Code/sensorHelper.py#L156-L173) - calculates the average arm angle of the patient over 5 seconds, then adds that value to z_angle_avg list to be used later.
-    * [Identify_sleep_state(angle_input_list)](/tree/main/Dashboard/Python%20Code/sensorHelper.py#L176-L212) - Output the state of sleep the patient is currently in based of the change in their arm angle. sensitivity can be changed throught the angle tolerance value, along with the threshold time in which the data must remain stable for.
+    * [Identify_sleep_state(angle_input_list)](Python%20Code/sensorHelper.py#L176-L212) - Output the state of sleep the patient is currently in based of the change in their arm angle. sensitivity can be changed throught the angle tolerance value, along with the threshold time in which the data must remain stable for.
 
 
 ## 6. Common Problems  
