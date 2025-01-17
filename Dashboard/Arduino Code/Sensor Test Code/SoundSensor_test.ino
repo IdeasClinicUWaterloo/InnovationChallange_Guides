@@ -1,4 +1,3 @@
-// Connect the sensor to the A0 (Analog 0) pin on the Arduino board
 const int pinSound = A0; 
 
 void setup(){ 
