@@ -11,7 +11,7 @@ Project: Health Hub -Arduino Sensor Solution
 #include <Adafruit_NeoPixel.h>
 #include <Wire.h>
 #include "SparkFunISL29125.h"
-#include "WS2812_Definitions.h"
+// #include "WS2812_Definitions.h"
 #include <DFRobot_BMX160.h>
 
 

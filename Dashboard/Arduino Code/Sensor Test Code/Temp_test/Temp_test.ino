@@ -10,7 +10,7 @@ void setup()
 
 void loop()
 {
-    int a = analogRead(0);
+    int a = analogRead(1);
 
     // Calculate the resistance of the sensor:
     // W1023 is the maximum ADC value (for a 10-bit ADC), and 10000 is the known fixed resistor value.
