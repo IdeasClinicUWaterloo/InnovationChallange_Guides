@@ -16,7 +16,7 @@
 
 <h2 id='1'>1: Introduction</h2>
 
-Welcome to the beginner's guide to Computer Vision and Mediapipe! This guide will teach you how to use the openCV and mediapipe libraries in Python. These libraries will allow you to analyze and display a person's poses captured from a photo, video, or even your webcam.
+Welcome to the beginner's guide to Computer Vision and Mediapipe! This guide will teach you how to use the openCV and mediapipe libraries in Python. These libraries will allow you to analyze and display a person's pose as captured from a photo, video, or even your webcam.
 
 <h2 id='2'>2: Installation</h2>
 
