@@ -210,7 +210,8 @@ python
 
 Copy code
 
-```outputs = model(**inputs)
+```
+outputs = model(**inputs)
 
 print(outputs.logits)
 ```
