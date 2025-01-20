@@ -136,7 +136,10 @@ Run the following code to output the accelerometer x, y, and z acceleration valu
 
 ***
 ### **Pulse Oximeter**
+There are two different Pulse Oximeters: one is green, and the other is purple. They have different part links and datasheets, but everything else, including the hookup and code, is the same.
+
 [Part Link: Green Sensor](https://www.digikey.ca/en/products/detail/analog-devices-inc-maxim-integrated/maxrefdes117/6165562)
+
 [Part Link: Purple Sensor](https://www.digikey.ca/en/products/detail/sunfounder/ST0244/22116824?s=N4IgTCBcDaILYEMAeBmADARjWABACwFMEAnAFx2IVIJzgHsATAVwBsCQBdAXyA)
 #### Libraries
 * [DFRobot_MAX30102 Arduino Library ](https://github.com/DFRobot/DFRobot_MAX30102) - Must download from Git. Not available through the IDE.
@@ -147,7 +150,7 @@ Run the following code to output the accelerometer x, y, and z acceleration valu
 On the pulse-oximeter sensor, two sides of the sensor there is a single connection point (GND or VIN), and on the other two sides there are three connection points (each with INT, SCL, and SDA). <br><br>
 This sensor uses an I2C connection, so we need to use the GND and VIN (VCC), as well as one set of the SDA and SCL pins (from the same side). INT pins are NOT used.<br><br>
 Use Breadboard to attach wires from the respected sensor pin to the Base Shield. 
-#### Code
+#### Code: SAME FOR BOTH SENSORS!!
 * [Pulse-Oximeter Test Code](Arduino%20Code/Sensor%20Test%20Code/PulseOximeter_test.ino?ref_type=heads)
 <br><br>
 
