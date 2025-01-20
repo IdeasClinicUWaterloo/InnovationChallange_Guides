@@ -144,7 +144,8 @@ You can use Hugging Face to answer questions based on a context paragraph.
     
     ```python
     from transformers import pipeline
-    qa_pipeline = pipeline('question-answering')```
+    qa_pipeline = pipeline('question-answering')
+    ```
     
 2.  **Provide the context and question**:
     
@@ -157,7 +158,8 @@ You can use Hugging Face to answer questions based on a context paragraph.
     question = "What does Hugging Face focus on?"
     
     result = qa_pipeline({'question': question, 'context': context})
-    print(result)```
+    print(result)
+    ```
     
 3.  **Output**:
     
