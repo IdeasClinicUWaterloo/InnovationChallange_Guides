@@ -179,10 +179,10 @@ python
 
 Copy code
 
-`from transformers import AutoTokenizer, AutoModelForSequenceClassification
+`from transformers import AutoTokenizer, AutoModelForSequenceClassification` 
 
 # Load model and tokenizer
-tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
+`tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
 
 model = AutoModelForSequenceClassification.from_pretrained("distilbert-base-uncased")` 
 
