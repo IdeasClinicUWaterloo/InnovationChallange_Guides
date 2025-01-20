@@ -195,6 +195,7 @@ python
 Copy code
 
 `inputs = tokenizer("Hugging Face makes NLP easy!", return_tensors="pt")
+
 print(inputs)` 
 
 ### **3. Run Inference**
