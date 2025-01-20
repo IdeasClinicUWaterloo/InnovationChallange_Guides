@@ -97,7 +97,7 @@ Here are some important concepts and features of OpenCV that beginners should kn
 
 **[Capture Video from Webcam](cv_examples/capture_from_webcam.py)**
  - Use the [```cv2.VideoCapture()```](https://www.geeksforgeeks.org/python-opencv-capture-video-from-camera/) method with parameter 0 to open the built-in webcam of your laptop
- - Call the ```read()``` method on the VideoCapture object in a loop too process it frame by frame
+ - Call the ```read()``` method on the VideoCapture object in a loop to process it frame by frame
 
  **[Read Video from File](cv_examples/read_video_from_file.py)**
  - Same as the above, but replace the parameter in the ```VideoCapture()``` method with the path to the file.
