@@ -121,9 +121,9 @@ Set values labeled as “redlow”, “greenlow”, “bluelow” to the lowest 
 
 ***
 ### **Accelerometer**
-[Part Link]([https://www.digikey.ca/en/products/detail/dfrobot/SEN0373/13590881?s=N4IgTCBcDaIMoFEByAGAzAdjSAugXyA])
+[Part Link](https://www.digikey.ca/en/products/detail/dfrobot/SEN0373/13590881?s=N4IgTCBcDaIMoFEByAGAzAdjSAugXyA)
 #### Libraries
-* [DFRobot_BMX160 ]([https://github.com/DFRobot/DFRobot_BMX160])
+* [DFRobot_BMX160 ](https://github.com/DFRobot/DFRobot_BMX160)
 #### Documents
 * [Datasheet + Setup Guide](https://wiki.dfrobot.com/BMX160_9_Axis_Sensor_Module_SKU_SEN0373)
 #### Hookup
@@ -139,7 +139,6 @@ Run the following code to output the accelerometer x, y, and z acceleration valu
 There are two different Pulse Oximeters: one is green, and the other is purple. They have different part links and datasheets, but everything else, including the hookup and code, is the same.
 
 [Part Link: Green Sensor](https://www.digikey.ca/en/products/detail/analog-devices-inc-maxim-integrated/maxrefdes117/6165562)
-
 [Part Link: Purple Sensor](https://www.digikey.ca/en/products/detail/sunfounder/ST0244/22116824?s=N4IgTCBcDaILYEMAeBmADARjWABACwFMEAnAFx2IVIJzgHsATAVwBsCQBdAXyA)
 #### Libraries
 * [DFRobot_MAX30102 Arduino Library ](https://github.com/DFRobot/DFRobot_MAX30102) - Must download from Git. Not available through the IDE.
