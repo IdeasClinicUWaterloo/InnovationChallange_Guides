@@ -90,12 +90,12 @@ Hugging Face provides a hub for pre-trained models (e.g., BERT, GPT, RoBERTa). T
     
 2.  **Use a pre-trained text classification pipeline**:
     
-       ```python
+       ``` python
        classifier = pipeline('sentiment-analysis')
        result = classifier("I love using Hugging Face for NLP tasks!")
        print(result)
-       
-        ```
+    
+       ```
 
 
  
