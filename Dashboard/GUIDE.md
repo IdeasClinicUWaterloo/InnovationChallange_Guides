@@ -23,6 +23,7 @@ A step-by-step guide on how to  implement arduino sensor modules into python wor
 ## 1. Arduino IDE Setup
 
 ### Arduino Board and Port Setup
+If you do not already have the Arduino IDE, you can download it [here](https://www.arduino.cc/en/software). We recommend downloading the first option - Arduino IDE 2.3.4.
 Before you can begin coding, you should configure your Arduino IDE to the specific arduino you are using. In this case you will be using the "Arduino UNO R4 Minima".
 
 1. Go to the bar at the top of the screen that reads "Select Board". 
