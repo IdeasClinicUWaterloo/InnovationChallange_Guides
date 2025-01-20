@@ -182,9 +182,11 @@ Copy code
 `from transformers import AutoTokenizer, AutoModelForSequenceClassification` 
 
 # Load model and tokenizer
-`tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
+```
+tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
 
-model = AutoModelForSequenceClassification.from_pretrained("distilbert-base-uncased")` 
+model = AutoModelForSequenceClassification.from_pretrained("distilbert-base-uncased")
+```
 
 ### **2. Tokenize Input Text**
 
@@ -194,9 +196,11 @@ python
 
 Copy code
 
-`inputs = tokenizer("Hugging Face makes NLP easy!", return_tensors="pt")
+```
+inputs = tokenizer("Hugging Face makes NLP easy!", return_tensors="pt")
 
-print(inputs)` 
+print(inputs)
+```
 
 ### **3. Run Inference**
 
