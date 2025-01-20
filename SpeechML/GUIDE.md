@@ -210,8 +210,10 @@ python
 
 Copy code
 
-`outputs = model(**inputs)
-print(outputs.logits)` 
+```outputs = model(**inputs)
+
+print(outputs.logits)
+```
 
 You can process the logits (raw outputs) further to determine the classification result.
 
@@ -233,11 +235,13 @@ Fine-tuning a model allows you to adapt pre-trained models for custom tasks. Thi
     
     Copy code
     
-    `from datasets import load_dataset
+    ```
+    from datasets import load_dataset
     
     dataset = load_dataset("imdb", split="train")
 
-    print(dataset)` 
+    print(dataset)
+    ``` 
     
 3.  **Fine-tuning Example**: Use Hugging Face's **Trainer API** for fine-tuning models. The steps involve:
     
