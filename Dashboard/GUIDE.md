@@ -5,7 +5,7 @@ A step-by-step guide on how to  implement arduino sensor modules into python wor
 1. [Arduino IDE Setup](#1-arduino-ide-setup)
     * [Arduino Board And Port Setup](#arduino-board-and-port-setup)
     * [Intalling Libraries](#installing-libraries)
-2. [Communication from Arduino to Python](#2-communicating-from-arduino-to-python)
+2. [Communication from Arduino to Python](#2-communicating-with-the-arduino)
 3. [Arduino Shield Connections](#3-arduino-shield-connections)
 4. [Sensor Set-Up](#4-sensor-setup)
     * [Accelerometer](#accelerometer)
@@ -61,7 +61,7 @@ All communication is done via the Serial port. You can view the serial port usin
 
 #### Arduino Code
 * As well, the Arduino can read and respond to information sent to it from the serial port. 
-* [Code to respond to serial inputs wrapped with <>, ex. <message>](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/blob/main/Dashboard/Arduino_Code/Serial_Communication/SerialReader/SerialReader.ino)
+* [Code to respond to serial inputs wrapped with <>, ex. < message >](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/blob/main/Dashboard/Arduino_Code/Serial_Communication/SerialReader/SerialReader.ino)
 
 #### Python Code
 * Python can also send and recieve messages through the serial port using the [PySerial](https://pyserial.readthedocs.io/en/latest/) library
