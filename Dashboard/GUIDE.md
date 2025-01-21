@@ -116,7 +116,8 @@ Run the following code to output the accelerometer x, y, and z acceleration valu
 ***
 ### **Button/Touch Sensor**
 [Button Part Link](https://wiki.seeedstudio.com/Grove-Button/)
-[Button Part Link](https://wiki.seeedstudio.com/Grove-Touch_Sensor/)
+
+[Touch Sensor Part Link](https://wiki.seeedstudio.com/Grove-Touch_Sensor/)
 #### Libraries
 No additional libraries needed for these sensors.
 #### Docuents
