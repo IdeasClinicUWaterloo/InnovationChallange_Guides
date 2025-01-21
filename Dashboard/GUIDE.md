@@ -130,7 +130,7 @@ No additional libraries needed for these sensors.
 #### Hookup
 Using one of the digital ports (D7) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
 #### Code
-* [Temp Test Code](Arduino_Code/Part_Testing/Temp_test.ino?ref_type=heads)
+* [Button/Touch Test Code](Arduino_Code/Part_Testing/ButtonAndTouchSensor_test/ButtonAndTouchSensor_test.ino?ref_type=heads)
 
 
 ***
@@ -143,7 +143,7 @@ Using one of the digital ports (D7) on the Base Shield, simply use the provided 
 #### Hookup
 Using one of the digital ports (D8) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
 #### Code
-* [Temp Test Code](Arduino_Code/Part_Testing/Temp_test.ino?ref_type=heads)
+* [Buzzer Test Code](Arduino_Code/Part_Testing/Temp_test.ino?ref_type=heads)
 
 
 ***
@@ -163,7 +163,7 @@ Update the values in the code labeled as “redhigh”, “greenhigh”, “blue
 
 Set values labeled as “redlow”, “greenlow”, “bluelow” to the lowest values when the sensor is in an environment with dark ambient lighting (dark room). This will act as your lowest level of brightness and baseline dark color (0,0,0) 
 #### Code
-* [Color Sensor Test Code](Arduino_Code/Part_Testing/ColorSensor_test.ino?ref_type=heads)
+* [Color Sensor Test Code](Arduino_Code/Part_Testing/ColorSensor_test/ColorSensor_test.ino?ref_type=heads)
 <br><br>
 
 
@@ -179,7 +179,7 @@ the Grove LCD Display is not compatible with the Arduino R4 and will require pul
 ![Pullup Resistors](Images/Pullup_Resitors.png) <br>
 The LCD Display uses I2C ports, so connect the VCC, GND, SDA, and SCL connection to the corresponding ports on the Base Shield.
 #### Code
-* [LCD Display Test Code](Arduino_Code/Part_Testing/lcdDisplay_test.ino?ref_type=heads)
+* [LCD Display Test Code](Arduino_Code/Part_Testing/LCD_test/LCD_test.ino?ref_type=heads)
 
 
 ***
@@ -196,7 +196,7 @@ More information can be found in “Hookup Guide” in documents above. <br>
 ![LED Hookup](Images/LED_Hookup.png)
 #### Code
 Running the code below with the correct pin setup should turn the LEDs in circuit with the arduino a light purple color. Change the “red”, “green”, and “blue” values and upload code to get different color outputs! 
-* [LED Test Code](Arduino_Code/Part_Testing/LED_test.ino?ref_type=heads) <br><br>
+* [LED Test Code](Arduino_Code/Part_Testing/LED_test/LED_test.ino?ref_type=heads) <br><br>
 
 
 ***
@@ -216,7 +216,7 @@ On the pulse-oximeter sensor, two sides of the sensor there is a single connecti
 This sensor uses an I2C connection, so we need to use the GND and VIN (VCC), as well as one set of the SDA and SCL pins (from the same side). INT pins are NOT used.<br><br>
 Use Breadboard to attach wires from the respected sensor pin to the Base Shield. 
 #### Code: SAME FOR BOTH SENSORS!!
-* [Pulse-Oximeter Test Code](Arduino_Code/Part_Testing/PulseOximeter_test.ino?ref_type=heads)
+* [Pulse-Oximeter Test Code](Arduino_Code/Part_Testing/PulseOximeter_test/PulseOximeter_test.ino?ref_type=heads)
 <br><br>
 
 
@@ -230,7 +230,7 @@ Use Breadboard to attach wires from the respected sensor pin to the Base Shield.
 #### Hookup
 Using one of the digital ports (D5) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
 #### Code
-* [Temp Test Code](Arduino_Code/Part_Testing/Temp_test.ino?ref_type=heads)
+* [Servo Test Code](Arduino_Code/Part_Testing/Servo_test/Servo_test.ino?ref_type=heads)
 
 
 ***
@@ -243,7 +243,7 @@ No additional libraries needed for this sensor.
 #### Hookup
 Using one of the analog ports (A0) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
 #### Code
-* [Sound Sensor Test Code](Arduino_Code/Part_Testing/SoundSensor_test.ino?ref_type=heads)<br><br>
+* [Sound Sensor Test Code](Arduino_Code/Part_Testing/SoundSensor_test/SoundSensor_test.ino?ref_type=heads)<br><br>
 
 
 ***
@@ -256,7 +256,7 @@ Using one of the analog ports (A0) on the Base Shield, simply use the provided 4
 #### Hookup
 Using one of the analog ports (A0) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
 #### Code
-* [Temp Test Code](Arduino_Code/Part_Testing/Temp_test.ino?ref_type=heads)
+* [Temp Test Code](Arduino_Code/Part_Testing/TemperatureSensor_test/TemperatureSensor_test.ino?ref_type=heads)
 
 
 
