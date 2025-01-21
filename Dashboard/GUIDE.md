@@ -113,7 +113,7 @@ The accelerometer uses an I2C port on the Base Shield which requires a VCC, GND,
 Use Breadboard to attach wires from the respected sensor pin to the Base Shield. 
 #### Code
 Run the following code to output the accelerometer x, y, and z acceleration values to the serial monitor. When laid flat on the table, the z-axis should read ~-9.81m/s2 and the other two values should read ~0. Example code provided by the library can also be used for further understanding of the accelerometer functions. 
-* [Accelerometer Test Code](Arduino_Code/Part_Testing/Accelerometer_test.ino?ref_type=heads)
+* [Accelerometer Test Code](Arduino_Code/Part_Testing/Accelerometer_test/Accelerometer_test.ino?ref_type=heads)
 <br><br>
 
 
