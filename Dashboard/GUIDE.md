@@ -55,13 +55,13 @@ All communication is done via the Serial port.
 
 ### Arduino Code
 * Function to receive data from Serial port, only if data wrapped with <> ex. < hi > <br>
-[recvWithStartEndMarkers()](Arduino%20Code/ArduinoPythonDisplay.ino#L126-L178)
+[recvWithStartEndMarkers()](Arduino_Code/ArduinoPythonDisplay.ino#L126-L178)
 * Function to use received data from Serial Port.<br>
-[void replyToPython()](Arduino%20Code/ArduinoPythonDisplay.ino#L180-L210)
+[void replyToPython()](Arduino_Code/ArduinoPythonDisplay.ino#L180-L210)
 
 ### Python Code
 * Code used to read data from the arduino Serial Monitor <br>
-[ArduioToPython](Arduino%20Code/Sensor%20Test%20Code/ArduinoToPython.py?ref_type=heads)
+[ArduioToPython](Arduino_Code/Part_Testing/ArduinoToPython.py?ref_type=heads)
 
 
 ## 3. Arduino Shield Connections
@@ -109,7 +109,7 @@ The accelerometer uses an I2C port on the Base Shield which requires a VCC, GND,
 Use Breadboard to attach wires from the respected sensor pin to the Base Shield. 
 #### Code
 Run the following code to output the accelerometer x, y, and z acceleration values to the serial monitor. When laid flat on the table, the z-axis should read ~-9.81m/s2 and the other two values should read ~0. Example code provided by the library can also be used for further understanding of the accelerometer functions. 
-* [Accelerometer Test Code](Arduino%20Code/Sensor%20Test%20Code/Accelerometer_test.ino?ref_type=heads)
+* [Accelerometer Test Code](Arduino_Code/Part_Testing/Accelerometer_test.ino?ref_type=heads)
 <br><br>
 
 
@@ -130,7 +130,7 @@ Update the values in the code labeled as “redhigh”, “greenhigh”, “blue
 
 Set values labeled as “redlow”, “greenlow”, “bluelow” to the lowest values when the sensor is in an environment with dark ambient lighting (dark room). This will act as your lowest level of brightness and baseline dark color (0,0,0) 
 #### Code
-* [Color Sensor Test Code](Arduino%20Code/Sensor%20Test%20Code/ColorSensor_test.ino?ref_type=heads)
+* [Color Sensor Test Code](Arduino_Code/Part_Testing/ColorSensor_test.ino?ref_type=heads)
 <br><br>
 
 
@@ -146,7 +146,7 @@ the Grove LCD Display is not compatible with the Arduino R4 and will require pul
 ![Pullup Resistors](Images/Pullup_Resitors.png) <br>
 The LCD Display uses I2C ports, so connect the VCC, GND, SDA, and SCL connection to the corresponding ports on the Base Shield.
 #### Code
-* [LCD Display Test Code](Arduino%20Code/Sensor%20Test%20Code/lcdDisplay_test.ino?ref_type=heads)
+* [LCD Display Test Code](Arduino_Code/Part_Testing/lcdDisplay_test.ino?ref_type=heads)
 
 
 ***
@@ -163,7 +163,7 @@ More information can be found in “Hookup Guide” in documents above. <br>
 ![LED Hookup](Images/LED_Hookup.png)
 #### Code
 Running the code below with the correct pin setup should turn the LEDs in circuit with the arduino a light purple color. Change the “red”, “green”, and “blue” values and upload code to get different color outputs! 
-* [LED Test Code](Arduino%20Code/Sensor%20Test%20Code/LED_test.ino?ref_type=heads) <br><br>
+* [LED Test Code](Arduino_Code/Part_Testing/LED_test.ino?ref_type=heads) <br><br>
 
 
 ***
@@ -183,7 +183,7 @@ On the pulse-oximeter sensor, two sides of the sensor there is a single connecti
 This sensor uses an I2C connection, so we need to use the GND and VIN (VCC), as well as one set of the SDA and SCL pins (from the same side). INT pins are NOT used.<br><br>
 Use Breadboard to attach wires from the respected sensor pin to the Base Shield. 
 #### Code: SAME FOR BOTH SENSORS!!
-* [Pulse-Oximeter Test Code](Arduino%20Code/Sensor%20Test%20Code/PulseOximeter_test.ino?ref_type=heads)
+* [Pulse-Oximeter Test Code](Arduino_Code/Part_Testing/PulseOximeter_test.ino?ref_type=heads)
 <br><br>
 
 
@@ -197,7 +197,7 @@ Use Breadboard to attach wires from the respected sensor pin to the Base Shield.
 #### Hookup
 Using one of the digital ports (D5) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
 #### Code
-* [Temp Test Code](Arduino%20Code/Sensor%20Test%20Code/Temp_test.ino?ref_type=heads)
+* [Temp Test Code](Arduino_Code/Part_Testing/Temp_test.ino?ref_type=heads)
 
 
 ***
@@ -208,7 +208,7 @@ No additional libraries needed for this sensor.
 #### Hookup
 Using one of the analog ports (A0) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
 #### Code
-* [Sound Sensor Test Code](Arduino%20Code/Sensor%20Test%20Code/SoundSensor_test.ino?ref_type=heads)<br><br>
+* [Sound Sensor Test Code](Arduino_Code/Part_Testing/SoundSensor_test.ino?ref_type=heads)<br><br>
 
 
 ***
@@ -221,7 +221,7 @@ Using one of the analog ports (A0) on the Base Shield, simply use the provided 4
 #### Hookup
 Using one of the analog ports (A0) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
 #### Code
-* [Temp Test Code](Arduino%20Code/Sensor%20Test%20Code/Temp_test.ino?ref_type=heads)
+* [Temp Test Code](Arduino_Code/Part_Testing/Temp_test.ino?ref_type=heads)
 
 
 
@@ -229,11 +229,11 @@ Using one of the analog ports (A0) on the Base Shield, simply use the provided 4
 Below are some functions made to help you implement the sensors into a functional prototype
 
 ### Arduino
-* [printJson()](Arduino%20Code/ArduinoPythonDisplay.ino#L273-L330) - Prints sensor data to Serial Monitor in json string format to make reading data into python easier. 
-* [recvWithStartEndMarkers()](Arduino%20Code/ArduinoPythonDisplay.ino#L126-L178) - Read data sent from python when formatted with start and end markers (i.e.< hello >)
-* [replyToPython()](Arduino%20Code/ArduinoPythonDisplay.ino#L180-L210) - Reply back to python with actions takn after the data that was sent to arduino was read.
-* [color_3digit()](Arduino%20Code/ArduinoPythonDisplay.ino#L253-L257) - Takes an integer input and formats the number into 3-digits, padding the front with 0's if needed.
-* [parseColorValues()](Arduino%20Code/ArduinoPythonDisplay.ino#L259-L271) - Takes a 9-digit color code input and splits it into 3 3-digit values for "red", "green", and "blue".
+* [printJson()](Arduino_Code/ArduinoPythonDisplay.ino#L273-L330) - Prints sensor data to Serial Monitor in json string format to make reading data into python easier. 
+* [recvWithStartEndMarkers()](Arduino_Code/ArduinoPythonDisplay.ino#L126-L178) - Read data sent from python when formatted with start and end markers (i.e.< hello >)
+* [replyToPython()](Arduino_Code/ArduinoPythonDisplay.ino#L180-L210) - Reply back to python with actions takn after the data that was sent to arduino was read.
+* [color_3digit()](Arduino_Code/ArduinoPythonDisplay.ino#L253-L257) - Takes an integer input and formats the number into 3-digits, padding the front with 0's if needed.
+* [parseColorValues()](Arduino_Code/ArduinoPythonDisplay.ino#L259-L271) - Takes a 9-digit color code input and splits it into 3 3-digit values for "red", "green", and "blue".
 
 
 ### Python
