@@ -185,7 +185,7 @@ The LCD Display uses I2C ports, so connect the VCC, GND, SDA, and SCL connection
 ### **LEDs** 
 [Part Link](https://www.digikey.ca/en/products/detail/sparkfun-electronics/COM-15206/10064425?s=N4IgTCBcDaIIwFYBsAOAtAYQPIFk2LAAYk0A5AERAF0BfIA)
 #### Libraries
-* [Adafruit_NeoPixel](Adafruit_NeoPixel ) - Also available in Ardiuno IDE Library Manger
+* [Adafruit_NeoPixel](https://reference.arduino.cc/reference/en/libraries/adafruit-neopixel/) - Also available in Ardiuno IDE Library Manger
 #### Documents
 * [Hookup Guide](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1179/WS2812_Breakout_Hookup_Guide.pdf)
 #### Hookup
