@@ -9,7 +9,7 @@ A step-by-step guide on how to  implement arduino sensor modules into python wor
 3. [Arduino Shield Connections](#3-arduino-shield-connections)
 4. [Sensor Set-Up](#4-sensor-setup)
     * [Accelerometer](#accelerometer)
-    * [Button/Touch Sensor](#Button/Touch Sensor)
+    * [Button/Touch Sensor]
     * [Color Sensor](#color-sensor)
     * [Pulse Oximeter](#pulse-oximeter)
     * [Sound Sensor](#sound-sensor)
