@@ -114,6 +114,34 @@ Run the following code to output the accelerometer x, y, and z acceleration valu
 
 
 ***
+### **Button/Touch Sensor**
+[Button Part Link](https://wiki.seeedstudio.com/Grove-Button/)
+[Button Part Link](https://wiki.seeedstudio.com/Grove-Touch_Sensor/)
+#### Libraries
+No additional libraries needed for these sensors.
+#### Docuents
+* [Button Manual](https://robu.in/wp-content/uploads/2019/09/Grove-Button-User-Manual.pdf)
+* [Touch Sensor Manual](https://robu.in/wp-content/uploads/2019/09/Grove-Touch-Sensor.pdf)
+#### Hookup
+Using one of the digital ports (D7) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
+#### Code
+* [Temp Test Code](Arduino_Code/Part_Testing/Temp_test.ino?ref_type=heads)
+
+
+***
+### **Buzzer**
+[Part Link](https://wiki.seeedstudio.com/Grove-Buzzer/)
+#### Libraries
+* [Servo](https://docs.arduino.cc/libraries/servo/) - Also available in Ardiuno IDE Library Manger
+#### Docuents
+* [Manual](https://www.mouser.com/datasheet/2/744/Seeed_107020000-1217511.pdf)
+#### Hookup
+Using one of the digital ports (D8) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
+#### Code
+* [Temp Test Code](Arduino_Code/Part_Testing/Temp_test.ino?ref_type=heads)
+
+
+***
 ### **Color Sensor**
 [Part Link](https://www.digikey.ca/en/products/detail/dfrobot/SEN0101/6588457?gclsrc=aw.ds&&utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Product_Low%20ROAS%20Categories&utm_term=&productid=6588457&utm_content=&utm_id=go_cmp-20291741422_adg-_ad-__dev-c_ext-_prd-6588457_sig-Cj0KCQiAs5i8BhDmARIsAGE4xHwkMFMRrdYxqIl3Mv8EGdNE3Zt0SoJy4V8yZpN3muggOEyRdVIUhYoaApFWEALw_wcB&gad_source=1&gclid=Cj0KCQiAs5i8BhDmARIsAGE4xHwkMFMRrdYxqIl3Mv8EGdNE3Zt0SoJy4V8yZpN3muggOEyRdVIUhYoaApFWEALw_wcB&gclsrc=aw.ds)
 #### Libraries
@@ -193,7 +221,7 @@ Use Breadboard to attach wires from the respected sensor pin to the Base Shield.
 #### Libraries
 * [Servo](https://docs.arduino.cc/libraries/servo/) - Also available in Ardiuno IDE Library Manger
 #### Docuents
-* [Datasheet](https://www.mouser.com/datasheet/2/744/Seeed_101020015-1217523.pdf?srsltid=AfmBOorwHlJCEQqf9S8z5mSSTPdVx3PrN5UK1Yeg_4D4VB85bLY0FuRT)
+* [Manual](https://www.manualslib.com/manual/1836691/Seeed-Grove-Servo-Series.html)
 #### Hookup
 Using one of the digital ports (D5) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
 #### Code
@@ -205,6 +233,8 @@ Using one of the digital ports (D5) on the Base Shield, simply use the provided 
 [Part Link](https://wiki.seeedstudio.com/Grove-Sound_Sensor/)
 #### Libraries
 No additional libraries needed for this sensor.
+#### Docuents
+* [Datasheet](https://www.mouser.com/datasheet/2/744/Seeed_101020015-1217523.pdf?srsltid=AfmBOorwHlJCEQqf9S8z5mSSTPdVx3PrN5UK1Yeg_4D4VB85bLY0FuRT)
 #### Hookup
 Using one of the analog ports (A0) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
 #### Code
