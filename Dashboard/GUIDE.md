@@ -97,6 +97,21 @@ The Serial Monitor will display the code outputs. This can be opened by clicking
 Each test code runs a setup function to initialize the code settings, Serial.begin() initializes the Serial Monitor baud rate. Whatever number is initialized in the Setup() function must match the baud rate value in the Serial Monitor.
 
 
+***
+### **Accelerometer**
+[Part Link](https://www.digikey.ca/en/products/detail/dfrobot/SEN0373/13590881?s=N4IgTCBcDaIMoFEByAGAzAdjSAugXyA)
+#### Libraries
+* [DFRobot_BMX160 ](https://github.com/DFRobot/DFRobot_BMX160)
+#### Documents
+* [Datasheet + Setup Guide](https://wiki.dfrobot.com/BMX160_9_Axis_Sensor_Module_SKU_SEN0373)
+#### Hookup
+The accelerometer uses an I2C port on the Base Shield which requires a VCC, GND, SCL, and SDA connection. Each pin should be connected to the corresponding pin of the same name on the Base Shield, with the other pins on the sensor left disconnected.<br><br>
+Use Breadboard to attach wires from the respected sensor pin to the Base Shield. 
+#### Code
+Run the following code to output the accelerometer x, y, and z acceleration values to the serial monitor. When laid flat on the table, the z-axis should read ~-9.81m/s2 and the other two values should read ~0. Example code provided by the library can also be used for further understanding of the accelerometer functions. 
+* [Accelerometer Test Code](Arduino%20Code/Sensor%20Test%20Code/Accelerometer_test.ino?ref_type=heads)
+<br><br>
+
 
 ***
 ### **Color Sensor**
@@ -120,19 +135,36 @@ Set values labeled as “redlow”, “greenlow”, “bluelow” to the lowest 
 
 
 ***
-### **Accelerometer**
-[Part Link](https://www.digikey.ca/en/products/detail/dfrobot/SEN0373/13590881?s=N4IgTCBcDaIMoFEByAGAzAdjSAugXyA)
+### **LCD Display**
+[Part Link](https://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/)
 #### Libraries
-* [DFRobot_BMX160 ](https://github.com/DFRobot/DFRobot_BMX160)
+* [Grove LCD RGB Backlight](https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight) - Also available in Arduino IDE Library Manger
 #### Documents
-* [Datasheet + Setup Guide](https://wiki.dfrobot.com/BMX160_9_Axis_Sensor_Module_SKU_SEN0373)
+* [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1081/104030001_Web.pdf)
 #### Hookup
-The accelerometer uses an I2C port on the Base Shield which requires a VCC, GND, SCL, and SDA connection. Each pin should be connected to the corresponding pin of the same name on the Base Shield, with the other pins on the sensor left disconnected.<br><br>
-Use Breadboard to attach wires from the respected sensor pin to the Base Shield. 
+the Grove LCD Display is not compatible with the Arduino R4 and will require pull-up resistors to function correctly. Use a breadboard to set up 4kΩ to 6kΩ  resistors in the configuration shown below.<br>
+![Pullup Resistors](Images/Pullup_Resitors.png) <br>
+The LCD Display uses I2C ports, so connect the VCC, GND, SDA, and SCL connection to the corresponding ports on the Base Shield.
 #### Code
-Run the following code to output the accelerometer x, y, and z acceleration values to the serial monitor. When laid flat on the table, the z-axis should read ~-9.81m/s2 and the other two values should read ~0. Example code provided by the library can also be used for further understanding of the accelerometer functions. 
-* [Accelerometer Test Code](Arduino%20Code/Sensor%20Test%20Code/Accelerometer_test.ino?ref_type=heads)
-<br><br>
+* [LCD Display Test Code](Arduino%20Code/Sensor%20Test%20Code/lcdDisplay_test.ino?ref_type=heads)
+
+
+***
+### **LEDs** 
+[Part Link](https://www.digikey.ca/en/products/detail/sparkfun-electronics/COM-15206/10064425?s=N4IgTCBcDaIIwFYBsAOAtAYQPIFk2LAAYk0A5AERAF0BfIA)
+#### Libraries
+* [Adafruit_NeoPixel](Adafruit_NeoPixel ) - Also available in Ardiuno IDE Library Manger
+#### Documents
+* [Hookup Guide](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1179/WS2812_Breakout_Hookup_Guide.pdf)
+#### Hookup
+The Circuit diagram below shows the correct wire configuration between the LED strip and arduino digital port. The capacitor (black cylinder) should be between 100µF and 1000µF, and the capacitor (striped cylinder) should be between 220Ω and 470Ω. This setup will protect the LED’s. <br> <br>
+Using a breadboard to connect the components, ensure proper connection of +5V (on LED) to VCC (on arduino shield), - (on LED) to GND (on arduino shield), and Di (on LED) to D6 (on arduino shield). <br><br>
+More information can be found in “Hookup Guide” in documents above. <br>
+![LED Hookup](Images/LED_Hookup.png)
+#### Code
+Running the code below with the correct pin setup should turn the LEDs in circuit with the arduino a light purple color. Change the “red”, “green”, and “blue” values and upload code to get different color outputs! 
+* [LED Test Code](Arduino%20Code/Sensor%20Test%20Code/LED_test.ino?ref_type=heads) <br><br>
+
 
 ***
 ### **Pulse Oximeter**
@@ -156,12 +188,23 @@ Use Breadboard to attach wires from the respected sensor pin to the Base Shield.
 
 
 ***
+### **Servo**
+[Part Link](https://wiki.seeedstudio.com/Grove-Servo/)
+#### Libraries
+* [Servo](https://docs.arduino.cc/libraries/servo/) - Also available in Ardiuno IDE Library Manger
+#### Docuents
+* [Datasheet](https://www.mouser.com/datasheet/2/744/Seeed_101020015-1217523.pdf?srsltid=AfmBOorwHlJCEQqf9S8z5mSSTPdVx3PrN5UK1Yeg_4D4VB85bLY0FuRT)
+#### Hookup
+Using one of the digital ports (D5) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
+#### Code
+* [Temp Test Code](Arduino%20Code/Sensor%20Test%20Code/Temp_test.ino?ref_type=heads)
+
+
+***
 ### **Sound Sensor**
 [Part Link](https://wiki.seeedstudio.com/Grove-Sound_Sensor/)
 #### Libraries
 No additional libraries needed for this sensor.
-#### Documents
-* [Datasheet](https://www.mouser.com/catalog/specsheets/Seeed_101020023.pdf?srsltid=AfmBOop0FdKfSwyigJdKftQx8tpUHrhx6HqNqUzuslpX8aSYn53-JP53)
 #### Hookup
 Using one of the analog ports (A0) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
 #### Code
@@ -172,45 +215,13 @@ Using one of the analog ports (A0) on the Base Shield, simply use the provided 4
 ### **Temperature Sensor**
 [Part Link](https://www.digikey.ca/en/products/detail/seeed-technology-co-ltd/101020015/5482612?gclsrc=aw.ds&&utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Product_Low%20ROAS%20Categories&utm_term=&productid=5482612&utm_content=&utm_id=go_cmp-20291741422_adg-_ad-__dev-c_ext-_prd-5482612_sig-Cj0KCQiAs5i8BhDmARIsAGE4xHzTSHPixUNWPe_Sz5zNK9TpqalWp9gAVqcVxikBVv6sWPFyKczcFioaAkwVEALw_wcB&gad_source=1&gclid=Cj0KCQiAs5i8BhDmARIsAGE4xHzTSHPixUNWPe_Sz5zNK9TpqalWp9gAVqcVxikBVv6sWPFyKczcFioaAkwVEALw_wcB&gclsrc=aw.ds)
 #### Libraries
-No additional libraries needed for this sensor.
+* [DFRobot_MAX30102 Arduino Library ](https://github.com/DFRobot/DFRobot_MAX30102)
 #### Docuents
 * [Datasheet](https://www.mouser.com/datasheet/2/744/Seeed_101020015-1217523.pdf?srsltid=AfmBOorwHlJCEQqf9S8z5mSSTPdVx3PrN5UK1Yeg_4D4VB85bLY0FuRT)
 #### Hookup
 Using one of the analog ports (A0) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
 #### Code
 * [Temp Test Code](Arduino%20Code/Sensor%20Test%20Code/Temp_test.ino?ref_type=heads)
-
-
-***
-### **LEDs** 
-[Part Link](https://www.digikey.ca/en/products/detail/sparkfun-electronics/COM-15206/10064425?s=N4IgTCBcDaIIwFYBsAOAtAYQPIFk2LAAYk0A5AERAF0BfIA)
-#### Libraries
-* [Adafruit_NeoPixel](Adafruit_NeoPixel ) - Also available in Ardiuno IDE Library Manger
-#### Documents
-* [Hookup Guide](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1179/WS2812_Breakout_Hookup_Guide.pdf)
-#### Hookup
-The Circuit diagram below shows the correct wire configuration between the LED strip and arduino digital port. The capacitor (black cylinder) should be between 100µF and 1000µF, and the capacitor (striped cylinder) should be between 220Ω and 470Ω. This setup will protect the LED’s. <br> <br>
-Using a breadboard to connect the components, ensure proper connection of +5V (on LED) to VCC (on arduino shield), - (on LED) to GND (on arduino shield), and Di (on LED) to D6 (on arduino shield). <br><br>
-More information can be found in “Hookup Guide” in documents above. <br>
-![LED Hookup](Images/LED_Hookup.png)
-#### Code
-Running the code below with the correct pin setup should turn the LEDs in circuit with the arduino a light purple color. Change the “red”, “green”, and “blue” values and upload code to get different color outputs! 
-* [LED Test Code](Arduino%20Code/Sensor%20Test%20Code/LED_test.ino?ref_type=heads) <br><br>
-
-
-***
-### **LCD Display**
-[Part Link](https://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/)
-#### Libraries
-* [Grove LCD RGB Backlight](https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight) - Also available in Arduino IDE Library Manger
-#### Documents
-* [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1081/104030001_Web.pdf)
-#### Hookup
-the Grove LCD Display is not compatible with the Arduino R4 and will require pull-up resistors to function correctly. Use a breadboard to set up 4kΩ to 6kΩ  resistors in the configuration shown below.<br>
-![Pullup Resistors](Images/Pullup_Resitors.png) <br>
-The LCD Display uses I2C ports, so connect the VCC, GND, SDA, and SCL connection to the corresponding ports on the Base Shield.
-#### Code
-* [LCD Display Test Code](Arduino%20Code/Sensor%20Test%20Code/lcdDisplay_test.ino?ref_type=heads)
 
 
 
