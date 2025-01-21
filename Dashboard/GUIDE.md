@@ -5,7 +5,7 @@ A step-by-step guide on how to  implement arduino sensor modules into python wor
 1. [Arduino IDE Setup](#1-arduino-ide-setup)
     * [Arduino Board And Port Setup](#arduino-board-and-port-setup)
     * [Intalling Libraries](#installing-libraries)
-2. [Communication from Arduino to Python](#2-communicating-with-the-arduino)
+2. [Communicating with the Arduino](#2-communicating-with-the-arduino)
 3. [Arduino Shield Connections](#3-arduino-shield-connections)
 4. [Sensor Set-Up](#4-sensor-setup)
     * [Accelerometer](#accelerometer)
