@@ -10,12 +10,15 @@ A step-by-step guide on how to  implement arduino sensor modules into python wor
 4. [Sensor Set-Up](#4-sensor-setup)
     * [Accelerometer](#accelerometer)
     * [Button/Touch Sensor](#buttontouch-sensor)
+    * [Buzzer](#buzzer)
     * [Color Sensor](#color-sensor)
+    * [LCD Display](#lcd-display)
+    * [LEDs](#leds)
     * [Pulse Oximeter](#pulse-oximeter)
+    * [Servo](#servo)
     * [Sound Sensor](#sound-sensor)
     * [Temperature Sensor](#temperature-sensor)
-    * [LEDs](#leds)
-    * [LCD Display](#lcd-display)
+    * 
 5. [Useful Functions](#5-useful-functions)
 6. [Common Problems](#6-common-problems)
 
