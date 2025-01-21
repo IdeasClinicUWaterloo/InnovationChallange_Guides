@@ -67,6 +67,7 @@ All communication is done via the Serial port. You can view the serial port usin
 * Python can also send and recieve messages through the serial port using the [PySerial](https://pyserial.readthedocs.io/en/latest/) library
 * To install this library, follow steps 2.1 and 2.2 [here](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/blob/main/Computer_Vision/GUIDE.md#21-download-python-version-37---312), and then run ```pip install pyserial```
 * [Python code to communicate with Arduino](Arduino_Code/Part_Testing/ArduinoToPython.py?ref_type=heads), to be used with an Arduino running the code above
+* You will likely need to close the serial monitor in your Arduino IDE in order to run this code
 
 
 ## 3. Arduino Shield Connections
