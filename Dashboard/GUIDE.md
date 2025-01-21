@@ -142,7 +142,7 @@ Using one of the digital ports (D7) on the Base Shield, simply use the provided 
 #### Hookup
 Using one of the digital ports (D8) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
 #### Code
-* [Buzzer Test Code](Arduino_Code/Part_Testing/Temp_test.ino?ref_type=heads)
+* [Buzzer Test Code](Arduino_Code/Part_Testing/Buzzer_test/Buzzer_test.ino?ref_type=heads)
 
 
 ***
