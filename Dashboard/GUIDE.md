@@ -117,142 +117,141 @@ For the test codes provided for each sensor, open a blank Arduino IDE tab to cop
 
 ***
 ### **Button/Touch Sensor**
-[Button Part Link](https://wiki.seeedstudio.com/Grove-Button/)
-
-[Touch Sensor Part Link](https://wiki.seeedstudio.com/Grove-Touch_Sensor/)
-#### Libraries
-No additional libraries needed for these sensors.
-#### Docuents
-* [Button Manual](https://robu.in/wp-content/uploads/2019/09/Grove-Button-User-Manual.pdf)
-* [Touch Sensor Manual](https://robu.in/wp-content/uploads/2019/09/Grove-Touch-Sensor.pdf)
-#### Hookup
-Using one of the digital ports (D7) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
-#### Code
-* [Button/Touch Test Code](Arduino_Code/Part_Testing/ButtonAndTouchSensor_test/ButtonAndTouchSensor_test.ino?ref_type=heads)
+* [Button Part Link](https://wiki.seeedstudio.com/Grove-Button/)
+* [Touch Sensor Part Link](https://wiki.seeedstudio.com/Grove-Touch_Sensor/)
+* #### Libraries
+   * No additional libraries needed for these sensors.
+* #### Docuents
+   * [Button Manual](https://robu.in/wp-content/uploads/2019/09/Grove-Button-User-Manual.pdf)
+   * [Touch Sensor Manual](https://robu.in/wp-content/uploads/2019/09/Grove-Touch-Sensor.pdf)
+* #### Hookup
+   * Using one of the digital ports (D7) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
+* #### Code
+   * [Button/Touch Test Code](Arduino_Code/Part_Testing/ButtonAndTouchSensor_test/ButtonAndTouchSensor_test.ino?ref_type=heads)
 
 
 ***
 ### **Buzzer**
-[Part Link](https://wiki.seeedstudio.com/Grove-Buzzer/)
-#### Libraries
-* [Servo](https://docs.arduino.cc/libraries/servo/) - Also available in Ardiuno IDE Library Manger
-#### Docuents
-* [Manual](https://www.mouser.com/datasheet/2/744/Seeed_107020000-1217511.pdf)
-#### Hookup
-Using one of the digital ports (D8) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
-#### Code
-* [Buzzer Test Code](Arduino_Code/Part_Testing/Buzzer_test/Buzzer_test.ino?ref_type=heads)
+* [Part Link](https://wiki.seeedstudio.com/Grove-Buzzer/)
+* #### Libraries
+   * [Servo](https://docs.arduino.cc/libraries/servo/) - Also available in Ardiuno IDE Library Manger
+* #### Docuents
+   * [Manual](https://www.mouser.com/datasheet/2/744/Seeed_107020000-1217511.pdf)
+* #### Hookup
+   * Using one of the digital ports (D8) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
+* #### Code
+   * [Buzzer Test Code](Arduino_Code/Part_Testing/Buzzer_test/Buzzer_test.ino?ref_type=heads)
 
 
 ***
 ### **Color Sensor**
-[Part Link](https://www.digikey.ca/en/products/detail/dfrobot/SEN0101/6588457?gclsrc=aw.ds&&utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Product_Low%20ROAS%20Categories&utm_term=&productid=6588457&utm_content=&utm_id=go_cmp-20291741422_adg-_ad-__dev-c_ext-_prd-6588457_sig-Cj0KCQiAs5i8BhDmARIsAGE4xHwkMFMRrdYxqIl3Mv8EGdNE3Zt0SoJy4V8yZpN3muggOEyRdVIUhYoaApFWEALw_wcB&gad_source=1&gclid=Cj0KCQiAs5i8BhDmARIsAGE4xHwkMFMRrdYxqIl3Mv8EGdNE3Zt0SoJy4V8yZpN3muggOEyRdVIUhYoaApFWEALw_wcB&gclsrc=aw.ds)
-#### Libraries
-* [DFRobot_TCS3200](https://github.com/Panjkrc/TCS3200_library) -Also available in Arduino IDE Library Manger
-#### Documents
-* [Hookup Guide](https://github.com/Panjkrc/TCS3200_library/blob/master/wiring_schematics.png)
-* [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2107/SEN0101_Web.pdf)
-#### Hookup 
-Color Sensor needs to be connected to an I2C port on the base shield to allow connection to SDA and SCL pins. In this diagram VDD represents VCC, otherwise the pin names should match to the required pins on the base shield. <br><br>
-Use Breadboard to attach wires from the respected sensor pin to the Base Shield. <br>
-![Color Sensor Hookup](Images/Color_Sensor_Hookup.png)
-#### Calibration
-Update the values in the code labeled as “redhigh”, “greenhigh”, “bluehigh” in the code below to the highest raw values read in the serial monitor when color sensor is in an environment with bright ambient lighting. This will act as the highest level of brightness and baseline bright value (255, 255, 255). 
+* [Part Link](https://www.digikey.ca/en/products/detail/dfrobot/SEN0101/6588457?gclsrc=aw.ds&&utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Product_Low%20ROAS%20Categories&utm_term=&productid=6588457&utm_content=&utm_id=go_cmp-20291741422_adg-_ad-__dev-c_ext-_prd-6588457_sig-Cj0KCQiAs5i8BhDmARIsAGE4xHwkMFMRrdYxqIl3Mv8EGdNE3Zt0SoJy4V8yZpN3muggOEyRdVIUhYoaApFWEALw_wcB&gad_source=1&gclid=Cj0KCQiAs5i8BhDmARIsAGE4xHwkMFMRrdYxqIl3Mv8EGdNE3Zt0SoJy4V8yZpN3muggOEyRdVIUhYoaApFWEALw_wcB&gclsrc=aw.ds)
+* #### Libraries
+   * [DFRobot_TCS3200](https://github.com/Panjkrc/TCS3200_library) -Also available in Arduino IDE Library Manger
+* #### Documents
+   * [Hookup Guide](https://github.com/Panjkrc/TCS3200_library/blob/master/wiring_schematics.png)
+   * [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2107/SEN0101_Web.pdf)
+* #### Hookup 
+   * Color Sensor needs to be connected to an I2C port on the base shield to allow connection to SDA and SCL pins. In this diagram VDD represents VCC, otherwise the pin names should match to the required pins on the base shield. <br><br>
+   * Use Breadboard to attach wires from the respected sensor pin to the Base Shield. <br>
+  ![Color Sensor Hookup](Images/Color_Sensor_Hookup.png)
+* #### Calibration
+   * Update the values in the code labeled as “redhigh”, “greenhigh”, “bluehigh” in the code below to the highest raw values read in the serial monitor when color sensor is in an environment with bright ambient lighting. This will act as the highest level of brightness and baseline bright value (255, 255, 255). 
 
-Set values labeled as “redlow”, “greenlow”, “bluelow” to the lowest values when the sensor is in an environment with dark ambient lighting (dark room). This will act as your lowest level of brightness and baseline dark color (0,0,0) 
-#### Code
-* [Color Sensor Test Code](Arduino_Code/Part_Testing/ColorSensor_test/ColorSensor_test.ino?ref_type=heads)
+   * Set values labeled as “redlow”, “greenlow”, “bluelow” to the lowest values when the sensor is in an environment with dark ambient lighting (dark room). This will act as your lowest level of brightness and baseline dark color (0,0,0) 
+* #### Code
+   * [Color Sensor Test Code](Arduino_Code/Part_Testing/ColorSensor_test/ColorSensor_test.ino?ref_type=heads)
 
 
 ***
 ### **LCD Display**
-[Part Link](https://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/)
-#### Libraries
-* [Grove LCD RGB Backlight](https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight) - Also available in Arduino IDE Library Manger
-#### Documents
-* [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1081/104030001_Web.pdf)
-#### Hookup
-the Grove LCD Display is not compatible with the Arduino R4 and will require pull-up resistors to function correctly. Use a breadboard to set up 4kΩ to 6kΩ  resistors in the configuration shown below.<br>
-![Pullup Resistors](Images/Pullup_Resitors.png) <br>
-The LCD Display uses I2C ports, so connect the VCC, GND, SDA, and SCL connection to the corresponding ports on the Base Shield.
-#### Code
-* [LCD Display Test Code](Arduino_Code/Part_Testing/LCD_test/LCD_test.ino?ref_type=heads)
+* [Part Link](https://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/)
+* #### Libraries
+   * [Grove LCD RGB Backlight](https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight) - Also available in Arduino IDE Library Manger
+* #### Documents
+   * [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1081/104030001_Web.pdf)
+* #### Hookup
+   * The Grove LCD Display is not compatible with the Arduino R4 and will require pull-up resistors to function correctly. Use a breadboard to set up 4kΩ to 6kΩ  resistors in the configuration shown below.<br>
+   ![Pullup Resistors](Images/Pullup_Resitors.png) <br>
+   * The LCD Display uses I2C ports, so connect the VCC, GND, SDA, and SCL connection to the corresponding ports on the Base Shield.
+* #### Code
+   * [LCD Display Test Code](Arduino_Code/Part_Testing/LCD_test/LCD_test.ino?ref_type=heads)
 
 
 ***
 ### **LEDs** 
-[Part Link](https://www.digikey.ca/en/products/detail/sparkfun-electronics/COM-15206/10064425?s=N4IgTCBcDaIIwFYBsAOAtAYQPIFk2LAAYk0A5AERAF0BfIA)
-#### Libraries
-* [Adafruit_NeoPixel](https://reference.arduino.cc/reference/en/libraries/adafruit-neopixel/) - Also available in Ardiuno IDE Library Manger
-#### Documents
-* [Hookup Guide](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1179/WS2812_Breakout_Hookup_Guide.pdf)
-#### Hookup
-The Circuit diagram below shows the correct wire configuration between the LED strip and arduino digital port. The capacitor (black cylinder) should be between 100µF and 1000µF, and the capacitor (striped cylinder) should be between 220Ω and 470Ω. This setup will protect the LED’s. <br> <br>
-Using a breadboard to connect the components, ensure proper connection of +5V (on LED) to VCC (on arduino shield), - (on LED) to GND (on arduino shield), and Di (on LED) to D6 (on arduino shield). <br><br>
-More information can be found in “Hookup Guide” in documents above. <br>
+* [Part Link](https://www.digikey.ca/en/products/detail/sparkfun-electronics/COM-15206/10064425?s=N4IgTCBcDaIIwFYBsAOAtAYQPIFk2LAAYk0A5AERAF0BfIA)
+* #### Libraries
+   * [Adafruit_NeoPixel](https://reference.arduino.cc/reference/en/libraries/adafruit-neopixel/) - Also available in Ardiuno IDE Library Manger
+* #### Documents
+   * [Hookup Guide](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1179/WS2812_Breakout_Hookup_Guide.pdf)
+* #### Hookup
+   * The Circuit diagram below shows the correct wire configuration between the LED strip and arduino digital port. The capacitor (black cylinder) should be between 100µF and 1000µF, and the capacitor (striped cylinder) should be between 220Ω and 470Ω. This setup will protect the LED’s. <br> <br>
+   * Using a breadboard to connect the components, ensure proper connection of +5V (on LED) to VCC (on arduino shield), - (on LED) to GND (on arduino shield), and Di (on LED) to D6 (on arduino shield). <br><br>
+   * More information can be found in “Hookup Guide” in documents above. <br>
 ![LED Hookup](Images/LED_Hookup.png)
-#### Code
-Running the code below with the correct pin setup should turn the LEDs in circuit with the arduino a light purple color. Change the “red”, “green”, and “blue” values and upload code to get different color outputs! 
-* [LED Test Code](Arduino_Code/Part_Testing/LED_test/LED_test.ino?ref_type=heads) <br><br>
+* #### Code
+   * Running the code below with the correct pin setup should turn the LEDs in circuit with the arduino a light purple color. Change the “red”, “green”, and “blue” values and upload code to get different color outputs! 
+   * [LED Test Code](Arduino_Code/Part_Testing/LED_test/LED_test.ino?ref_type=heads) <br><br>
 
 
 ***
 ### **Pulse Oximeter**
-There are two different Pulse Oximeters: one is green, and the other is purple. They have different part links and datasheets, but everything else, including the hookup and code, is the same.
+   * There are two different Pulse Oximeters: one is green, and the other is purple. They have different part links and datasheets, but everything else, including the hookup and code, is the same.
 
-[Part Link: Green Sensor](https://www.digikey.ca/en/products/detail/analog-devices-inc-maxim-integrated/maxrefdes117/6165562)
+* [Part Link: Green Sensor](https://www.digikey.ca/en/products/detail/analog-devices-inc-maxim-integrated/maxrefdes117/6165562)
 
-[Part Link: Purple Sensor](https://www.digikey.ca/en/products/detail/sunfounder/ST0244/22116824?s=N4IgTCBcDaILYEMAeBmADARjWABACwFMEAnAFx2IVIJzgHsATAVwBsCQBdAXyA)
-#### Libraries
-* [DFRobot_MAX30102 Arduino Library ](https://github.com/DFRobot/DFRobot_MAX30102) - Must download from Git. Not available through the IDE.
-#### Documents 
-* [Datasheet: Green Sensor](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1222/MAXREFDES117_Web.pdf)
-* [Datasheet: Purple Sensor](https://www.analog.com/media/en/technical-documentation/data-sheets/max30102.pdf)
-#### Hookup: SAME FOR BOTH SENSORS!!
-On the pulse-oximeter sensor, two sides of the sensor there is a single connection point (GND or VIN), and on the other two sides there are three connection points (each with INT, SCL, and SDA). <br><br>
-This sensor uses an I2C connection, so we need to use the GND and VIN (VCC), as well as one set of the SDA and SCL pins (from the same side). INT pins are NOT used.<br><br>
-Use Breadboard to attach wires from the respected sensor pin to the Base Shield. 
-#### Code: SAME FOR BOTH SENSORS!!
-* [Pulse-Oximeter Test Code](Arduino_Code/Part_Testing/PulseOximeter_test/PulseOximeter_test.ino?ref_type=heads)
+* [Part Link: Purple Sensor](https://www.digikey.ca/en/products/detail/sunfounder/ST0244/22116824?s=N4IgTCBcDaILYEMAeBmADARjWABACwFMEAnAFx2IVIJzgHsATAVwBsCQBdAXyA)
+* #### Libraries
+   * [DFRobot_MAX30102 Arduino Library ](https://github.com/DFRobot/DFRobot_MAX30102) - Must download from Git. Not available through the IDE.
+* #### Documents 
+   * [Datasheet: Green Sensor](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1222/MAXREFDES117_Web.pdf)
+   * [Datasheet: Purple Sensor](https://www.analog.com/media/en/technical-documentation/data-sheets/max30102.pdf)
+* #### Hookup: SAME FOR BOTH SENSORS!!
+   * On the pulse-oximeter sensor, two sides of the sensor there is a single connection point (GND or VIN), and on the other two sides there are three connection points (each with INT, SCL, and SDA).
+   * This sensor uses an I2C connection, so we need to use the GND and VIN (VCC), as well as one set of the SDA and SCL pins (from the same side). INT pins are NOT used.
+   * Use Breadboard to attach wires from the respected sensor pin to the Base Shield. 
+* #### Code: SAME FOR BOTH SENSORS!!
+   * [Pulse-Oximeter Test Code](Arduino_Code/Part_Testing/PulseOximeter_test/PulseOximeter_test.ino?ref_type=heads)
 
 
 ***
 ### **Servo**
-[Part Link](https://wiki.seeedstudio.com/Grove-Servo/)
-#### Libraries
-* [Servo](https://docs.arduino.cc/libraries/servo/) - Also available in Ardiuno IDE Library Manger
-#### Docuents
-* [Manual](https://www.manualslib.com/manual/1836691/Seeed-Grove-Servo-Series.html)
-#### Hookup
-Using one of the digital ports (D5) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
-#### Code
-* [Servo Test Code](Arduino_Code/Part_Testing/Servo_test/Servo_test.ino?ref_type=heads)
+* [Part Link](https://wiki.seeedstudio.com/Grove-Servo/)
+* #### Libraries
+   * [Servo](https://docs.arduino.cc/libraries/servo/) - Also available in Ardiuno IDE Library Manger
+* #### Docuents
+   * [Manual](https://www.manualslib.com/manual/1836691/Seeed-Grove-Servo-Series.html)
+* #### Hookup
+   * Using one of the digital ports (D5) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
+* #### Code
+   * [Servo Test Code](Arduino_Code/Part_Testing/Servo_test/Servo_test.ino?ref_type=heads)
 
 
 ***
 ### **Sound Sensor**
-[Part Link](https://wiki.seeedstudio.com/Grove-Sound_Sensor/)
-#### Libraries
-No additional libraries needed for this sensor.
-#### Docuents
-* [Datasheet](https://www.mouser.com/datasheet/2/744/Seeed_101020015-1217523.pdf?srsltid=AfmBOorwHlJCEQqf9S8z5mSSTPdVx3PrN5UK1Yeg_4D4VB85bLY0FuRT)
-#### Hookup
-Using one of the analog ports (A0) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
-#### Code
-* [Sound Sensor Test Code](Arduino_Code/Part_Testing/SoundSensor_test/SoundSensor_test.ino?ref_type=heads)<br><br>
+* [Part Link](https://wiki.seeedstudio.com/Grove-Sound_Sensor/)
+* #### Libraries
+   * No additional libraries needed for this sensor.
+* #### Docuents
+   * [Datasheet](https://www.mouser.com/datasheet/2/744/Seeed_101020015-1217523.pdf?srsltid=AfmBOorwHlJCEQqf9S8z5mSSTPdVx3PrN5UK1Yeg_4D4VB85bLY0FuRT)
+* #### Hookup
+   * Using one of the analog ports (A0) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
+* #### Code
+   * [Sound Sensor Test Code](Arduino_Code/Part_Testing/SoundSensor_test/SoundSensor_test.ino?ref_type=heads)<br><br>
 
 
 ***
 ### **Temperature Sensor**
-[Part Link](https://www.digikey.ca/en/products/detail/seeed-technology-co-ltd/101020015/5482612?gclsrc=aw.ds&&utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Product_Low%20ROAS%20Categories&utm_term=&productid=5482612&utm_content=&utm_id=go_cmp-20291741422_adg-_ad-__dev-c_ext-_prd-5482612_sig-Cj0KCQiAs5i8BhDmARIsAGE4xHzTSHPixUNWPe_Sz5zNK9TpqalWp9gAVqcVxikBVv6sWPFyKczcFioaAkwVEALw_wcB&gad_source=1&gclid=Cj0KCQiAs5i8BhDmARIsAGE4xHzTSHPixUNWPe_Sz5zNK9TpqalWp9gAVqcVxikBVv6sWPFyKczcFioaAkwVEALw_wcB&gclsrc=aw.ds)
-#### Libraries
-* [DFRobot_MAX30102 Arduino Library ](https://github.com/DFRobot/DFRobot_MAX30102)
-#### Docuents
-* [Datasheet](https://www.mouser.com/datasheet/2/744/Seeed_101020015-1217523.pdf?srsltid=AfmBOorwHlJCEQqf9S8z5mSSTPdVx3PrN5UK1Yeg_4D4VB85bLY0FuRT)
-#### Hookup
-Using one of the analog ports (A0) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
-#### Code
-* [Temp Test Code](Arduino_Code/Part_Testing/TemperatureSensor_test/TemperatureSensor_test.ino?ref_type=heads)
+* [Part Link](https://www.digikey.ca/en/products/detail/seeed-technology-co-ltd/101020015/5482612?gclsrc=aw.ds&&utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Product_Low%20ROAS%20Categories&utm_term=&productid=5482612&utm_content=&utm_id=go_cmp-20291741422_adg-_ad-__dev-c_ext-_prd-5482612_sig-Cj0KCQiAs5i8BhDmARIsAGE4xHzTSHPixUNWPe_Sz5zNK9TpqalWp9gAVqcVxikBVv6sWPFyKczcFioaAkwVEALw_wcB&gad_source=1&gclid=Cj0KCQiAs5i8BhDmARIsAGE4xHzTSHPixUNWPe_Sz5zNK9TpqalWp9gAVqcVxikBVv6sWPFyKczcFioaAkwVEALw_wcB&gclsrc=aw.ds)
+* #### Libraries
+   * [DFRobot_MAX30102 Arduino Library ](https://github.com/DFRobot/DFRobot_MAX30102)
+* #### Docuents
+   * [Datasheet](https://www.mouser.com/datasheet/2/744/Seeed_101020015-1217523.pdf?srsltid=AfmBOorwHlJCEQqf9S8z5mSSTPdVx3PrN5UK1Yeg_4D4VB85bLY0FuRT)
+* #### Hookup
+   * Using one of the analog ports (A0) on the Base Shield, simply use the provided 4-prong connection wires to directly connect the sensor to the Base Shield, ensuring proper connections are made (GND to GND, VCC to VCC, etc.)
+* #### Code
+   * [Temp Test Code](Arduino_Code/Part_Testing/TemperatureSensor_test/TemperatureSensor_test.ino?ref_type=heads)
 
 
 
