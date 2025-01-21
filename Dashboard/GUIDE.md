@@ -52,19 +52,21 @@ Search for the Library name in the ‘library manager” in the Arduino IDE and 
 3. Browse to File -> Examples and then find your library and click on the example to get some example code for how to use that library. <br> 
 ![Libray Examples](Images/Library_Examples.png)
 
+### Running Code
+To upload the code to the Arduino, ensure that the correct port is selected, and press the button with the arrow in the top left. This will send the code to the Arduino and it will loop forever. If you want to restart your code, you can click the reset button (labeled RST on the shield next to the green light) once. If you want to erase the code from the Arduino without uploading new code, you can click this reset button twice. If you ever find that the code is failing to upload despite the correct port being selected, it is generally a good idea to try erasing the old code.
 
-## 2. Communicating From Arduino to Python
-All communication is done via the Serial port.
 
-### Arduino Code
-* Function to receive data from Serial port, only if data wrapped with <> ex. < hi > <br>
-[recvWithStartEndMarkers()](Arduino_Code/ArduinoPythonDisplay.ino#L126-L178)
-* Function to use received data from Serial Port.<br>
-[void replyToPython()](Arduino_Code/ArduinoPythonDisplay.ino#L180-L210)
+## 2. Communicating with the Arduino
+All communication is done via the Serial port. You can view the serial port using your Arduino IDE by going to tools -> serial monitor from the menu at the top. You can also open it up as a graph view by opening the serial plotter in the same menu. Whenever there is a Serial.print() or Serial.println() command in the Arduino code, that information should show up in your serial monitor. 
 
-### Python Code
-* Code used to read data from the arduino Serial Monitor <br>
-[ArduioToPython](Arduino_Code/Part_Testing/ArduinoToPython.py?ref_type=heads)
+#### Arduino Code
+* As well, the Arduino can read and respond to information sent to it from the serial port. 
+* [Code to respond to serial inputs wrapped with <>, ex. <message>](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/blob/main/Dashboard/Arduino_Code/Serial_Communication/SerialReader/SerialReader.ino)
+
+#### Python Code
+* Python can also send and recieve messages through the serial port using the [PySerial](https://pyserial.readthedocs.io/en/latest/) library
+* To install this library, follow steps 2.1 and 2.2 [here](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/blob/main/Computer_Vision/GUIDE.md#21-download-python-version-37---312), and then run ```pip install pyserial```
+* [Python code to communicate with Arduino](Arduino_Code/Part_Testing/ArduinoToPython.py?ref_type=heads), to be used with an Arduino running the code above
 
 
 ## 3. Arduino Shield Connections
