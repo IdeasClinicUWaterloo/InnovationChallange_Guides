@@ -103,16 +103,16 @@ For the test codes provided for each sensor, open a blank Arduino IDE tab to cop
 ***
 ### **Accelerometer**
 [Part Link](https://www.digikey.ca/en/products/detail/dfrobot/SEN0373/13590881?s=N4IgTCBcDaIMoFEByAGAzAdjSAugXyA)
-#### Libraries
-* [DFRobot_BMX160 ](https://github.com/DFRobot/DFRobot_BMX160)
-#### Documents
-* [Datasheet + Setup Guide](https://wiki.dfrobot.com/BMX160_9_Axis_Sensor_Module_SKU_SEN0373)
-#### Hookup
-The accelerometer uses an I2C port on the Base Shield which requires a VCC, GND, SCL, and SDA connection. Each pin should be connected to the corresponding pin of the same name on the Base Shield, with the other pins on the sensor left disconnected.<br><br>
-Use Breadboard to attach wires from the respected sensor pin to the Base Shield. 
-#### Code
-Run the following code to output the accelerometer x, y, and z acceleration values to the serial monitor. When laid flat on the table, the z-axis should read ~-9.81m/s2 and the other two values should read ~0. Example code provided by the library can also be used for further understanding of the accelerometer functions. 
-* [Accelerometer Test Code](Arduino_Code/Part_Testing/Accelerometer_test/Accelerometer_test.ino?ref_type=heads)
+* #### Libraries
+   * [DFRobot_BMX160 ](https://github.com/DFRobot/DFRobot_BMX160)
+* #### Documents
+   * [Datasheet + Setup Guide](https://wiki.dfrobot.com/BMX160_9_Axis_Sensor_Module_SKU_SEN0373)
+* #### Hookup
+   * The accelerometer uses an I2C port on the Base Shield which requires a VCC, GND, SCL, and SDA connection. Each pin should be connected to the corresponding pin of the same name on the Base Shield, with the other pins on the sensor left disconnected.<br><br>
+   * Use Breadboard to attach wires from the respected sensor pin to the Base Shield. 
+* #### Code
+   * Run the following code to output the accelerometer x, y, and z acceleration values to the serial monitor. When laid flat on the table, the z-axis should read ~-9.81m/s2 and the other two values should read ~0. Example code provided by the library can also be used for further understanding of the accelerometer functions. 
+   * [Accelerometer Test Code](Arduino_Code/Part_Testing/Accelerometer_test/Accelerometer_test.ino?ref_type=heads)
 
 
 ***
