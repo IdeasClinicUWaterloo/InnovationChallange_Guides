@@ -25,9 +25,9 @@ void setup() {
  
 //color is light purple 
 //Change color values to test other colors! 
-uint8_t red = 91; 
-uint8_t green = 32; 
-uint8_t blue = 125; 
+uint8_t red = 128; 
+uint8_t green = 5; 
+uint8_t blue = 128; 
  
 void loop() { 
   strip.setPixelColor(0, 0, 0, 255);
@@ -46,7 +46,7 @@ void loop() {
   strip.show();
   delay(2000);
   for(int i = 0; i < 3; ++i){
-    strip.setPixelColor(i, red, blue, green);
+    strip.setPixelColor(i, red, green, blue);
     strip.show();
   }
   delay(2000);
