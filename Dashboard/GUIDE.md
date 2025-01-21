@@ -264,11 +264,11 @@ Using one of the analog ports (A0) on the Base Shield, simply use the provided 4
 Below are some functions made to help you implement the sensors into a functional prototype
 
 ### Arduino
-* [printJson()](Arduino_Code/ArduinoPythonDisplay.ino#L273-L330) - Prints sensor data to Serial Monitor in json string format to make reading data into python easier. 
-* [recvWithStartEndMarkers()](Arduino_Code/ArduinoPythonDisplay.ino#L126-L178) - Read data sent from python when formatted with start and end markers (i.e.< hello >)
-* [replyToPython()](Arduino_Code/ArduinoPythonDisplay.ino#L180-L210) - Reply back to python with actions takn after the data that was sent to arduino was read.
-* [color_3digit()](Arduino_Code/ArduinoPythonDisplay.ino#L253-L257) - Takes an integer input and formats the number into 3-digits, padding the front with 0's if needed.
-* [parseColorValues()](Arduino_Code/ArduinoPythonDisplay.ino#L259-L271) - Takes a 9-digit color code input and splits it into 3 3-digit values for "red", "green", and "blue".
+* [printJson()](Arduino_Code/Serial_Communication/ArduinoPythonDisplay.ino#L273-L330) - Prints sensor data to Serial Monitor in json string format to make reading data into python easier. 
+* [recvWithStartEndMarkers()](Arduino_Code/Serial_Communication/ArduinoPythonDisplay.ino#L126-L178) - Read data sent from python when formatted with start and end markers (i.e.< hello >)
+* [replyToPython()](Arduino_Code/Serial_Communication/ArduinoPythonDisplay.ino#L180-L210) - Reply back to python with actions takn after the data that was sent to arduino was read.
+* [color_3digit()](Arduino_Code/Serial_Communication/ArduinoPythonDisplay.ino#L253-L257) - Takes an integer input and formats the number into 3-digits, padding the front with 0's if needed.
+* [parseColorValues()](Arduino_Code/Serial_Communication/ArduinoPythonDisplay.ino#L259-L271) - Takes a 9-digit color code input and splits it into 3 3-digit values for "red", "green", and "blue".
 
 
 ### Python
