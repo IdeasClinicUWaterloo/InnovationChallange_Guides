@@ -59,6 +59,9 @@ To upload the code to the Arduino, ensure that the correct port is selected, and
 ## 2. Communicating with the Arduino
 All communication is done via the Serial port. You can view the serial port using your Arduino IDE by going to tools -> serial monitor from the menu at the top. You can also open it up as a graph view by opening the serial plotter in the same menu. Whenever there is a Serial.print() or Serial.println() command in the Arduino code, that information should show up in your serial monitor. 
 
+#### Baud Rate
+Any test code that uses the serial port runs a setup function to initialize the code settings. Serial.begin() initializes the Serial Monitor baud rate. Whatever number is initialized in the Setup() function must match the baud rate value in the Serial Monitor. Most of the time, your IDE will change it automatically, but it is important to check if things are not working. 
+
 #### Arduino Code
 * As well, the Arduino can read and respond to information sent to it from the serial port. 
 * [Code to respond to serial inputs wrapped with <>, ex. < message >](https://github.com/IdeasClinicUWaterloo/InnovationChallange_Guides/blob/main/Dashboard/Arduino_Code/Serial_Communication/SerialReader/SerialReader.ino)
@@ -95,15 +98,7 @@ For analog and digital pins, there are 4 connection points but only 3 are needed
 ## 4. Sensor Setup
 
 Use the resources under each sensor type to learn more about how the sensor works, what libraries are needed, and how to connect it to your arduino.
-#### Test Code
 For the test codes provided for each sensor, open a blank Arduino IDE tab to copy and paste to code into.
-
-#### Serial Monitor
-The Serial Monitor will display the code outputs. This can be opened by clicking on the magnifying glass icon in the top right-hand corner of the screen. 
-
-#### Baud Rate
-Each test code runs a setup function to initialize the code settings, Serial.begin() initializes the Serial Monitor baud rate. Whatever number is initialized in the Setup() function must match the baud rate value in the Serial Monitor.
-
 
 ***
 ### **Accelerometer**
@@ -118,7 +113,6 @@ Use Breadboard to attach wires from the respected sensor pin to the Base Shield.
 #### Code
 Run the following code to output the accelerometer x, y, and z acceleration values to the serial monitor. When laid flat on the table, the z-axis should read ~-9.81m/s2 and the other two values should read ~0. Example code provided by the library can also be used for further understanding of the accelerometer functions. 
 * [Accelerometer Test Code](Arduino_Code/Part_Testing/Accelerometer_test/Accelerometer_test.ino?ref_type=heads)
-<br><br>
 
 
 ***
@@ -168,7 +162,6 @@ Update the values in the code labeled as “redhigh”, “greenhigh”, “blue
 Set values labeled as “redlow”, “greenlow”, “bluelow” to the lowest values when the sensor is in an environment with dark ambient lighting (dark room). This will act as your lowest level of brightness and baseline dark color (0,0,0) 
 #### Code
 * [Color Sensor Test Code](Arduino_Code/Part_Testing/ColorSensor_test/ColorSensor_test.ino?ref_type=heads)
-<br><br>
 
 
 ***
@@ -221,7 +214,6 @@ This sensor uses an I2C connection, so we need to use the GND and VIN (VCC), as 
 Use Breadboard to attach wires from the respected sensor pin to the Base Shield. 
 #### Code: SAME FOR BOTH SENSORS!!
 * [Pulse-Oximeter Test Code](Arduino_Code/Part_Testing/PulseOximeter_test/PulseOximeter_test.ino?ref_type=heads)
-<br><br>
 
 
 ***
