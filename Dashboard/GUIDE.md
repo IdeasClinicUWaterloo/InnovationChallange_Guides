@@ -259,30 +259,28 @@ For the test codes provided for each sensor, open a blank Arduino IDE tab to cop
 Below are some functions made to help you implement the sensors into a functional prototype
 
 ### Arduino
-* [printJson()](Arduino_Code/Serial_Communication/ArduinoPythonDisplay.ino#L273-L330) - Prints sensor data to Serial Monitor in json string format to make reading data into python easier. 
-* [recvWithStartEndMarkers()](Arduino_Code/Serial_Communication/ArduinoPythonDisplay.ino#L126-L178) - Read data sent from python when formatted with start and end markers (i.e.< hello >)
-* [replyToPython()](Arduino_Code/Serial_Communication/ArduinoPythonDisplay.ino#L180-L210) - Reply back to python with actions takn after the data that was sent to arduino was read.
-* [color_3digit()](Arduino_Code/Serial_Communication/ArduinoPythonDisplay.ino#L253-L257) - Takes an integer input and formats the number into 3-digits, padding the front with 0's if needed.
-* [parseColorValues()](Arduino_Code/Serial_Communication/ArduinoPythonDisplay.ino#L259-L271) - Takes a 9-digit color code input and splits it into 3 3-digit values for "red", "green", and "blue".
+* [printJson()](Arduino_Code/Serial_Communication/ArduinoPythonDisplay/ArduinoPythonDisplay.ino#L273-L330) - Prints sensor data to Serial Monitor in json string format to make reading data into python easier. 
+* [color_3digit()](Arduino_Code/Serial_Communication/ArduinoPythonDisplay/ArduinoPythonDisplay.ino#L253-L257) - Takes an integer input and formats the number into 3-digits, padding the front with 0's if needed.
+* [parseColorValues()](Arduino_Code/Serial_Communication/ArduinoPythonDisplay/ArduinoPythonDisplay.ino#L259-L271) - Takes a 9-digit color code input and splits it into 3 3-digit values for "red", "green", and "blue".
 
 
 ### Python
-* [read_arduino_data()](Python%20Code/index.py#L123-L149) - Reads data sent from Arduino Serial monitor and assigns values to designated variables.
-* [outputStringToDisplay()](Python%20Code/sensorHelper.py#L42-L48) - Writes text string to arduino with start and end markers to be read.
-* [parseArduinojson()](Python%20Code/sensorHelper.py#L34-L40) - loads line from Serial Monitor as json string if the line starts with "{". 
+* [read_arduino_data()](Python_Code/index.py#L123-L149) - Reads data sent from Arduino Serial monitor and assigns values to designated variables.
+* [outputStringToDisplay()](Python_Code/sensorHelper.py#L42-L48) - Writes text string to arduino with start and end markers to be read.
+* [parseArduinojson()](Python_Code/sensorHelper.py#L34-L40) - loads line from Serial Monitor as json string if the line starts with "{". 
 * **Color Sensor:**
-    * [constrain()](Python%20Code/sensorHelper.py#L67-L73) - constrains a value "n" to within a range [minn, maxn].
-    * [color_3digit()](Python%20Code/sensorHelper.py#L58-L65) - Takes an integer input and formats the number into 3-digits, padding the front with 0's if needed.
-    * [outputColorToDisplay()](Python%20Code/sensorHelper.py#L50-L56) - Writes color hex code to arduino with start and end markers plus the color tag "+".
-    * [colorCalculation()](Python%20Code/sensorHelper.py#L76-L116) - calculates the color light needed to be shown on LEDs in order to make ambiant light color meet desired goal (based on color sensor input).
+    * [constrain()](Python_Code/sensorHelper.py#L67-L73) - constrains a value "n" to within a range [minn, maxn].
+    * [color_3digit()](Python_Code/sensorHelper.py#L58-L65) - Takes an integer input and formats the number into 3-digits, padding the front with 0's if needed.
+    * [outputColorToDisplay()](Python_Code/sensorHelper.py#L50-L56) - Writes color hex code to arduino with start and end markers plus the color tag "+".
+    * [colorCalculation()](Python_Code/sensorHelper.py#L76-L116) - calculates the color light needed to be shown on LEDs in order to make ambiant light color meet desired goal (based on color sensor input).
 * **Pulse Oximeter**
-    * [parse_heart_value()](Python%20Code/sensorHelper.py?ref_type=heads#L21-L32) - assigns HR and SPO2 values to variables in memory if valid inputs are read.
+    * [parse_heart_value()](Python_Code/sensorHelper.py?ref_type=heads#L21-L32) - assigns HR and SPO2 values to variables in memory if valid inputs are read.
 
 * **Accelerometer** (defining sleep vs awake):
-    * [read_serial()](Python%20Code/sensorHelper.py#L122-L136) - reads wrist accelerometer data from the Serial Monitor.
-    * [calculate_angle()](Python%20Code/sensorHelper.py#L138-L150) - Calcucates the patients arm angle based on accelerometer values read from serial monitor.
-    * [five_sec_average()](Python%20Code/sensorHelper.py#L156-L173) - calculates the average arm angle of the patient over 5 seconds, then adds that value to z_angle_avg list to be used later.
-    * [Identify_sleep_state(angle_input_list)](Python%20Code/sensorHelper.py#L176-L212) - Output the state of sleep the patient is currently in based of the change in their arm angle. sensitivity can be changed throught the angle tolerance value, along with the threshold time in which the data must remain stable for.
+    * [read_serial()](Python_Code/sensorHelper.py#L122-L136) - reads wrist accelerometer data from the Serial Monitor.
+    * [calculate_angle()](Python_Code/sensorHelper.py#L138-L150) - Calcucates the patients arm angle based on accelerometer values read from serial monitor.
+    * [five_sec_average()](Python_Code/sensorHelper.py#L156-L173) - calculates the average arm angle of the patient over 5 seconds, then adds that value to z_angle_avg list to be used later.
+    * [Identify_sleep_state(angle_input_list)](Python_Code/sensorHelper.py#L176-L212) - Output the state of sleep the patient is currently in based of the change in their arm angle. sensitivity can be changed throught the angle tolerance value, along with the threshold time in which the data must remain stable for.
 
 
 ## 6. Common Problems  
