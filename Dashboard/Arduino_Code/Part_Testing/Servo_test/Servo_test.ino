@@ -7,6 +7,7 @@ int pos = 0;    // variable to store the servo position
 
 void setup() {
   myservo.attach(5);  // attaches the servo on pin 5 to the servo object
+                      // Change this number to change whatever digital port your servo is connected to
 }
 
 void loop() {

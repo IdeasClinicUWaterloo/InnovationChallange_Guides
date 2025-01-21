@@ -1,4 +1,9 @@
-// Code to provide update to button press when prompted by
+// Code to provide update to button press when prompted by user
+// If the user types '<button>', then the arduino will respond with the current button status
+// If the user types anything else, the arudino will repeat back what it was sent
+
+// ALL MESSAGES MUST BE SENT IN THE FOLLOWING FORMAT:
+// <message>
 
 const int buttonPin = 7;
 // Corresponds to the digital port that the button / touch sensor is plugged into
@@ -52,7 +57,7 @@ void recvWithStartEndMarkers() {
   }
 }
 
-void replyToPython() {
+void replyToMessage() {
   if (strcmp(receivedChars, "button") == 0){
     int pressed = digitalRead(buttonPin);
     if (pressed == 1) {
@@ -77,7 +82,7 @@ void loop() {
   while(newData == false) {
     recvWithStartEndMarkers();
   }
-  replyToPython();
+  replyToMessage();
   newData = false;
   delay(100);
 }
