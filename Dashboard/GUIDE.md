@@ -18,7 +18,6 @@ A step-by-step guide on how to  implement arduino sensor modules into python wor
     * [Servo](#servo)
     * [Sound Sensor](#sound-sensor)
     * [Temperature Sensor](#temperature-sensor)
-    * 
 5. [Useful Functions](#5-useful-functions)
 6. [Common Problems](#6-common-problems)
 
