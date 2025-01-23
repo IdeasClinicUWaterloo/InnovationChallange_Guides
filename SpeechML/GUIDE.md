@@ -253,7 +253,8 @@ Fine-tuning a model allows you to adapt pre-trained models for custom tasks. Thi
     -   Defining a `Trainer` and training arguments.
     -   Training the model.
 
-Refer to Hugging Face’s fine-tuning tutorials for more details.
+Refer to [Hugging Face’s fine-tuning tutorials](https://huggingface.co/docs/transformers/en/training) for more details.
+Note: This process will take a long time, especially with larger data sets and less powerful laptops.
 
 ----------
 
