@@ -185,10 +185,11 @@ For the test codes provided for each sensor, open a blank Arduino IDE tab to cop
 * #### Documents
    * [Hookup Guide](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1179/WS2812_Breakout_Hookup_Guide.pdf)
 * #### Hookup
-   * The Circuit diagram below shows the correct wire configuration between the LED strip and arduino digital port. The capacitor (black cylinder) should be between 100µF and 1000µF, and the capacitor (striped cylinder) should be between 220Ω and 470Ω. This setup will protect the LED’s. <br> <br>
-   * Using a breadboard to connect the components, ensure proper connection of +5V (on LED) to VCC (on arduino shield), - (on LED) to GND (on arduino shield), and Di (on LED) to D6 (on arduino shield). <br><br>
-   * More information can be found in “Hookup Guide” in documents above. <br>
-![LED Hookup](Images/LED_Hookup.png)
+   * Use one of the 4-pin to male wires to connect any of the D ports on the Arduino. The D port you use should be the value of the LED_PIN constant defined in the second line of the LED test code.
+   * Connect the black wire from the 4-pin to the black/blue wire on the LED strip (Ground)
+   * Connect the red wire from the 4-pin to the red wire on the LED strip (5v)
+   * Connect the yellow wire from the 4-pin to the yellow wire on the LED strip (data)
+   * The white wire on the 4-pin should not connect to anything.
 * #### Code
    * Running the code below with the correct pin setup should turn the LEDs in circuit with the arduino a light purple color. Change the “red”, “green”, and “blue” values and upload code to get different color outputs! 
    * [LED Test Code](Arduino_Code/Part_Testing/LED_test/LED_test.ino?ref_type=heads) <br><br>
