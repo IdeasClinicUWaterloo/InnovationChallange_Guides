@@ -213,7 +213,7 @@ For the test codes provided for each sensor, open a blank Arduino IDE tab to cop
    * Use Breadboard to attach wires from the respected sensor pin to the Base Shield. 
 * #### Code: SAME FOR BOTH SENSORS!!
    * [Pulse-Oximeter Test Code](Arduino_Code/Part_Testing/PulseOximeter_test/PulseOximeter_test.ino?ref_type=heads)
-   * This code uses the serial plotter instead of the serial monitor. The numbers will still be shown on the monitor but the data will be very hard to understand.
+   * This code uses the serial plotter instead of the serial monitor. The numbers will still be shown on the monitor but the data will be very hard to understand without being in a graph.
 
 ***
 ### **Servo**
